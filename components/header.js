@@ -124,7 +124,7 @@ class CustomHeader extends HTMLElement {
 
             <div class="header-container">
                 <a href="index.html" class="logo">
-                    VietSEO<span>Content</span>
+                   Yani<span>Content</span>
                 </a>
 
                 <nav class="nav-links">
