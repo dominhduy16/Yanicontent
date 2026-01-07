@@ -1,383 +1,660 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VietSEO Content Masters | Premium SEO Content Writing Services</title>
-    <meta name="description" content="Specialized SEO content writing services for Vietnamese businesses. Long-term content strategy for construction, healthcare, and B2B services.">
-    <link rel="stylesheet" href="style.css">
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yani Content | Dịch vụ Viết bài chuẩn SEO Authority & Trust</title>
+    <meta
+      name="description"
+      content="Dịch vụ Content SEO chuyên sâu cho doanh nghiệp B2B, Xây dựng, Y tế. Tập trung vào chuyển đổi thực tế và xây dựng vị thế chuyên gia (Authority) bền vững."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
+
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            500: '#2F8F5B',
-                            600: '#3FBF8C',
-                            700: '#1E6640',
-                        },
-                        dark: {
-                            900: '#0B1F17',
-                            800: '#0F2A20',
-                            700: '#163629',
-                        },
-                        light: {
-                            100: '#F5F7F6',
-                            200: '#E6F4EE',
-                            300: '#C7D7D1',
-                            400: '#7A968B',
-                        },
-                        accent: '#5EE0B6'
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "sans-serif"] },
+            colors: {
+              primary: { 500: "#2F8F5B", 600: "#1E6640", 900: "#0F2A20" },
+              dark: { 900: "#0B1F17", 800: "#12261E", 700: "#1A3329" },
+              light: {
+                100: "#F5F7F6",
+                200: "#E6F4EE",
+                300: "#C7D7D1",
+                /* --- SỬA DÒNG DƯỚI ĐÂY --- */
+                /* Cũ: '#7A968B' (Hơi tối) */
+                /* Mới: '#9CAFA7' (Sáng hơn, dễ đọc hơn) */
+                400: "#9CAFA7",
+              },
+              accent: "#5EE0B6",
+            },
+          },
+        },
+      };
     </script>
-</head>
-<body class="bg-dark-900 text-light-300 font-sans antialiased">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0b1f17;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2f8f5b;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body class="bg-dark-900 text-light-300 font-sans antialiased">
     <custom-header></custom-header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="relative bg-dark-900 pt-24 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-            <div class="absolute inset-0 opacity-30" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHg9IjAiIHk9IjAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDMiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=');"></div>
-            <div class="max-w-7xl mx-auto relative z-10">
-                <div class="text-center">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-light-200 mb-6">
-                        Strategic SEO Content <span class="text-accent">for Vietnamese Businesses</span>
-                    </h1>
-                    <p class="text-xl md:text-2xl text-light-300 max-w-3xl mx-auto mb-10">
-                        Premium content writing services designed to build authority and drive qualified traffic to your business.
-                    </p>
-                    <div class="flex justify-center gap-4">
-                        <a href="/services" class="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                            Explore Our Services
-                        </a>
-                        <a href="/contact" class="border border-accent/50 hover:bg-accent/10 text-accent font-semibold px-8 py-3 rounded-lg transition-all duration-300">
-                            Contact Our Team
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section
+        class="relative bg-dark-900 pt-36 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 opacity-10 pointer-events-none"
+          style="
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PHBhdGggZD0iTTAgMGg0MHY0MEgwVjB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjEiLz48L3N2Zz4=');
+          "
+        ></div>
 
-        <!-- Who We Serve Section -->
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-800">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-light-200 mb-4">Who This Service Is For</h2>
-                    <p class="text-xl text-light-400 max-w-3xl mx-auto">
-                        Businesses investing in long-term SEO content strategy with professional standards.
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 hover:border-accent/50 transition-all duration-300 shadow-xl">
-                        <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-lg mb-6">
-                            <i data-feather="home" class="text-accent w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-light-200 mb-3">Construction Firms</h3>
-                        <p class="text-light-400">
-                            Establish authority in specialized construction services with technical, intent-driven content.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 hover:border-accent/50 transition-all duration-300 shadow-xl">
-                        <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-lg mb-6">
-                            <i data-feather="heart" class="text-accent w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-light-200 mb-3">Healthcare Providers</h3>
-                        <p class="text-light-400">
-                            Build trust with medically accurate content that addresses patient concerns and questions.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 hover:border-accent/50 transition-all duration-300 shadow-xl">
-                        <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-lg mb-6">
-                            <i data-feather="briefcase" class="text-accent w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-light-200 mb-3">B2B Services</h3>
-                        <p class="text-light-400">
-                            Generate qualified leads with content that speaks to industry professionals and decision-makers.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="max-w-7xl mx-auto relative z-10 text-center">
+          <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-500/10 border border-primary-500/20 text-accent text-xs font-bold uppercase tracking-widest mb-8"
+          >
+            <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+            Viết Content SEO cho Doanh nghiệp • Theo Search Intent
+          </div>
 
-        <!-- Core Services Section -->
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-900">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-light-200 mb-4">Our Core Services</h2>
-                    <p class="text-xl text-light-400 max-w-3xl mx-auto">
-                        Specialized content solutions designed for Vietnamese market needs.
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 hover:border-accent/50 transition-all duration-300 shadow-xl">
-                        <h3 class="text-xl font-bold text-light-200 mb-3">SEO-Optimized Articles</h3>
-                        <p class="text-light-400 mb-6">
-                            Comprehensive, research-backed articles targeting high-value keywords with commercial intent.
-                        </p>
-                        <a href="/services" class="inline-flex items-center text-accent hover:underline">
-                            Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 hover:border-accent/50 transition-all duration-300 shadow-xl">
-                        <h3 class="text-xl font-bold text-light-200 mb-3">Content Strategy</h3>
-                        <p class="text-light-400 mb-6">
-                            6-12 month content roadmaps aligned with your business goals and search trends.
-                        </p>
-                        <a href="/services" class="inline-flex items-center text-accent hover:underline">
-                            Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 hover:border-accent/50 transition-all duration-300 shadow-xl">
-                        <h3 class="text-xl font-bold text-light-200 mb-3">Editorial Oversight</h3>
-                        <p class="text-light-400 mb-6">
-                            Professional editing and quality control to maintain high standards across all content.
-                        </p>
-                        <a href="/services" class="inline-flex items-center text-accent hover:underline">
-                            Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="text-center mt-12">
-                    <a href="/services" class="inline-flex items-center bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition-all duration-300">
-                        View All Services <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
+          <h1
+            class="text-4xl md:text-6xl lg:text-7xl font-bold text-light-100 mb-8 leading-tight tracking-tight"
+          >
+            Chuyển hóa Nội dung thành <br />
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary-500"
+              >Tài Sản Số Bền Vững</span
+            >
+          </h1>
 
-        <!-- Trust Indicators Section -->
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-800">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-light-200 mb-4">Our Standards</h2>
-                    <p class="text-xl text-light-400 max-w-3xl mx-auto">
-                        Quality and expertise you can rely on for your content needs.
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="text-center">
-                        <div class="flex items-center justify-center w-20 h-20 bg-primary-500/10 rounded-full mx-auto mb-6">
-                            <i data-feather="check-circle" class="text-accent w-10 h-10"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-light-200 mb-3">Editorial Rigor</h3>
-                        <p class="text-light-400">
-                            Every piece undergoes multiple rounds of review by subject matter experts.
-                        </p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="flex items-center justify-center w-20 h-20 bg-primary-500/10 rounded-full mx-auto mb-6">
-                            <i data-feather="search" class="text-accent w-10 h-10"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-light-200 mb-3">Intent-Focused</h3>
-                        <p class="text-light-400">
-                            Content structured to match search intent and user needs, not just keywords.
-                        </p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="flex items-center justify-center w-20 h-20 bg-primary-500/10 rounded-full mx-auto mb-6">
-                            <i data-feather="shield" class="text-accent w-10 h-10"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-light-200 mb-3">EEAT Compliant</h3>
-                        <p class="text-light-400">
-                            Content demonstrates Experience, Expertise, Authoritativeness, and Trustworthiness.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <p
+            class="text-xl text-light-400 max-w-3xl mx-auto mb-10 font-light leading-relaxed"
+          >
+            Giải pháp Content SEO tập trung vào
+            <strong>Authority (Thẩm quyền)</strong> và
+            <strong>Trust (Niềm tin)</strong>. Giúp doanh nghiệp B2B tiếp cận
+            đúng khách hàng mục tiêu mà không phụ thuộc vào quảng cáo.
+          </p>
 
-        <!-- Industries Served Section -->
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-900">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-light-200 mb-4">Industries We Serve</h2>
-                    <p class="text-xl text-light-400 max-w-3xl mx-auto">
-                        Specialized content for industries where expertise matters.
-                    </p>
-                </div>
-                
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <div class="bg-dark-800 p-6 rounded-lg border border-white/5 hover:border-accent/50 transition-all duration-300">
-                        <h3 class="text-lg font-semibold text-light-200">Construction</h3>
-                    </div>
-                    <div class="bg-dark-800 p-6 rounded-lg border border-white/5 hover:border-accent/50 transition-all duration-300">
-                        <h3 class="text-lg font-semibold text-light-200">Interior Design</h3>
-                    </div>
-                    <div class="bg-dark-800 p-6 rounded-lg border border-white/5 hover:border-accent/50 transition-all duration-300">
-                        <h3 class="text-lg font-semibold text-light-200">Dental Services</h3>
-                    </div>
-                    <div class="bg-dark-800 p-6 rounded-lg border border-white/5 hover:border-accent/50 transition-all duration-300">
-                        <h3 class="text-lg font-semibold text-light-200">Healthcare</h3>
-                    </div>
-                    <div class="bg-dark-800 p-6 rounded-lg border border-white/5 hover:border-accent/50 transition-all duration-300">
-                        <h3 class="text-lg font-semibold text-light-200">Legal Services</h3>
-                    </div>
-                    <div class="bg-dark-800 p-6 rounded-lg border border-white/5 hover:border-accent/50 transition-all duration-300">
-                        <h3 class="text-lg font-semibold text-light-200">B2B Services</h3>
-                    </div>
-                    <div class="bg-dark-800 p-6 rounded-lg border border-white/5 hover:border-accent/50 transition-all duration-300">
-                        <h3 class="text-lg font-semibold text-light-200">Manufacturing</h3>
-                    </div>
-                    <div class="bg-dark-800 p-6 rounded-lg border border-white/5 hover:border-accent/50 transition-all duration-300">
-                        <h3 class="text-lg font-semibold text-light-200">Professional Services</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <div class="flex flex-col sm:flex-row justify-center gap-5">
+            <a
+              href="services.html"
+              class="bg-primary-500 hover:bg-primary-600 text-white font-bold px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(47,143,91,0.4)] transition-all duration-300 hover:-translate-y-1"
+            >
+              Xem Giải Pháp Content
+            </a>
+            <a
+              href="contact.html"
+              class="group flex items-center justify-center px-8 py-4 rounded-xl border border-white/10 text-light-300 font-semibold hover:bg-white/5 transition-all"
+            >
+              Nhắn Zalo để nhận báo giá
+              <i
+                data-feather="arrow-right"
+                class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Process Section -->
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-800">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-light-200 mb-4">Our Content Process</h2>
-                    <p class="text-xl text-light-400 max-w-3xl mx-auto">
-                        A systematic approach to ensure quality and effectiveness.
-                    </p>
-                </div>
-                
-                <div class="relative">
-                    <div class="hidden lg:block absolute left-1/2 top-0 h-full w-0.5 bg-gradient-to-b from-accent/30 to-transparent"></div>
-                    
-                    <div class="space-y-12 lg:space-y-0">
-                        <!-- Step 1 -->
-                        <div class="lg:flex lg:items-center lg:justify-between lg:odd:flex-row-reverse">
-                            <div class="lg:w-5/12 mb-8 lg:mb-0">
-                                <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-full lg:hidden mx-auto mb-6">
-                                    <span class="text-accent text-xl font-bold">1</span>
-                                </div>
-                                <h3 class="text-xl font-bold text-light-200 mb-3 text-center lg:text-left">Discovery & Strategy</h3>
-                                <p class="text-light-400 text-center lg:text-left">
-                                    We analyze your business goals, audience needs, and competitive landscape to develop a content strategy.
-                                </p>
-                            </div>
-                            <div class="hidden lg:flex lg:items-center lg:justify-center lg:w-2/12">
-                                <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-full">
-                                    <span class="text-accent text-xl font-bold">1</span>
-                                </div>
-                            </div>
-                            <div class="lg:w-5/12"></div>
-                        </div>
-                        
-                        <!-- Step 2 -->
-                        <div class="lg:flex lg:items-center lg:justify-between lg:odd:flex-row-reverse">
-                            <div class="lg:w-5/12"></div>
-                            <div class="hidden lg:flex lg:items-center lg:justify-center lg:w-2/12">
-                                <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-full">
-                                    <span class="text-accent text-xl font-bold">2</span>
-                                </div>
-                            </div>
-                            <div class="lg:w-5/12 mb-8 lg:mb-0">
-                                <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-full lg:hidden mx-auto mb-6">
-                                    <span class="text-accent text-xl font-bold">2</span>
-                                </div>
-                                <h3 class="text-xl font-bold text-light-200 mb-3 text-center lg:text-left">Keyword Research</h3>
-                                <p class="text-light-400 text-center lg:text-left">
-                                    Identifying high-value keywords that align with user intent and business objectives.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- Step 3 -->
-                        <div class="lg:flex lg:items-center lg:justify-between lg:odd:flex-row-reverse">
-                            <div class="lg:w-5/12 mb-8 lg:mb-0">
-                                <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-full lg:hidden mx-auto mb-6">
-                                    <span class="text-accent text-xl font-bold">3</span>
-                                </div>
-                                <h3 class="text-xl font-bold text-light-200 mb-3 text-center lg:text-left">Content Creation</h3>
-                                <p class="text-light-400 text-center lg:text-left">
-                                    Expert writers craft content that balances SEO requirements with readability and value.
-                                </p>
-                            </div>
-                            <div class="hidden lg:flex lg:items-center lg:justify-center lg:w-2/12">
-                                <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-full">
-                                    <span class="text-accent text-xl font-bold">3</span>
-                                </div>
-                            </div>
-                            <div class="lg:w-5/12"></div>
-                        </div>
-                        
-                        <!-- Step 4 -->
-                        <div class="lg:flex lg:items-center lg:justify-between lg:odd:flex-row-reverse">
-                            <div class="lg:w-5/12"></div>
-                            <div class="hidden lg:flex lg:items-center lg:justify-center lg:w-2/12">
-                                <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-full">
-                                    <span class="text-accent text-xl font-bold">4</span>
-                                </div>
-                            </div>
-                            <div class="lg:w-5/12 mb-8 lg:mb-0">
-                                <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-full lg:hidden mx-auto mb-6">
-                                    <span class="text-accent text-xl font-bold">4</span>
-                                </div>
-                                <h3 class="text-xl font-bold text-light-200 mb-3 text-center lg:text-left">Editorial Review</h3>
-                                <p class="text-light-400 text-center lg:text-left">
-                                    Content undergoes rigorous editing for accuracy, clarity, and alignment with strategy.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- Step 5 -->
-                        <div class="lg:flex lg:items-center lg:justify-between lg:odd:flex-row-reverse">
-                            <div class="lg:w-5/12">
-                                <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-full lg:hidden mx-auto mb-6">
-                                    <span class="text-accent text-xl font-bold">5</span>
-                                </div>
-                                <h3 class="text-xl font-bold text-light-200 mb-3 text-center lg:text-left">Performance Tracking</h3>
-                                <p class="text-light-400 text-center lg:text-left">
-                                    Regular reporting and optimization based on content performance and business impact.
-                                </p>
-                            </div>
-                            <div class="hidden lg:flex lg:items-center lg:justify-center lg:w-2/12">
-                                <div class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-full">
-                                    <span class="text-accent text-xl font-bold">5</span>
-                                </div>
-                            </div>
-                            <div class="lg:w-5/12"></div>
-                        </div>
-                    </div>
-                </div>
+      <section class="py-20 px-4 bg-dark-900 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-light-100 mb-4">
+              Đối tác phù hợp
+            </h2>
+            <p class="text-lg text-light-400 max-w-2xl mx-auto">
+              Chúng tôi tối ưu nội dung cho doanh nghiệp cần làm SEO BÀI BẢN,
+              tập trung đúng search intent, ưu tiên traffic chất lượng và lead,
+              phù hợp với team marketing/SEO triển khai dài hạn 6–12 tháng, ngân
+              sách từ 10–20 triệu/tháng.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="group p-8 rounded-2xl bg-dark-800 border border-white/5 hover:border-accent/50 hover:bg-dark-800/80 transition-all duration-300"
+            >
+              <div
+                class="w-14 h-14 bg-dark-700 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i data-feather="home" class="text-accent w-7 h-7"></i>
+              </div>
+              <h3 class="text-xl font-bold text-light-200 mb-3">
+                Xây dựng & Nội thất
+              </h3>
+              <p class="text-light-400 text-sm leading-relaxed">
+                Thể hiện năng lực thi công và tư duy thẩm mỹ qua từng bài viết
+                kỹ thuật.
+              </p>
             </div>
-        </section>
+            <div
+              class="group p-8 rounded-2xl bg-dark-800 border border-white/5 hover:border-accent/50 hover:bg-dark-800/80 transition-all duration-300"
+            >
+              <div
+                class="w-14 h-14 bg-dark-700 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i data-feather="activity" class="text-accent w-7 h-7"></i>
+              </div>
+              <h3 class="text-xl font-bold text-light-200 mb-3">
+                Y tế & Sức khỏe (YMYL)
+              </h3>
+              <p class="text-light-400 text-sm leading-relaxed">
+                Tuân thủ tiêu chuẩn EEAT. Nội dung minh bạch, chính xác và có
+                trách nhiệm.
+              </p>
+            </div>
+            <div
+              class="group p-8 rounded-2xl bg-dark-800 border border-white/5 hover:border-accent/50 hover:bg-dark-800/80 transition-all duration-300"
+            >
+              <div
+                class="w-14 h-14 bg-dark-700 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i data-feather="briefcase" class="text-accent w-7 h-7"></i>
+              </div>
+              <h3 class="text-xl font-bold text-light-200 mb-3">
+                B2B Services
+              </h3>
+              <p class="text-light-400 text-sm leading-relaxed">
+                Nội dung In-depth thuyết phục C-level trong các hành trình khách
+                hàng dài hạn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- CTA Section -->
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-900">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-light-200 mb-6">Ready to Elevate Your Content Strategy?</h2>
-                <p class="text-xl text-light-400 mb-8">
-                    Let's discuss how strategic SEO content can drive sustainable growth for your business.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="/services" class="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition-all duration-300">
-                        Explore Our Services
-                    </a>
-                    <a href="/contact" class="border border-accent/50 hover:bg-accent/10 text-accent font-semibold px-8 py-3 rounded-lg transition-all duration-300">
-                        Contact Our Team
-                    </a>
+      <section class="py-24 px-4 bg-dark-800 relative overflow-hidden">
+        <div
+          class="absolute top-0 right-0 w-96 h-96 bg-primary-500/10 rounded-full blur-[120px] pointer-events-none"
+        ></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+          <div class="text-center mb-16">
+            <span
+              class="text-accent font-bold tracking-widest uppercase text-xs"
+              >Case Study</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold text-light-100 mt-2 mb-4">
+              Hiệu quả
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary-500"
+                >Thực tế</span
+              >
+            </h2>
+            <p class="text-lg text-light-400 max-w-2xl mx-auto">
+              Dưới đây là ví dụ cách chúng tôi đo và tối ưu hiệu quả nội dung,
+              tập trung vào traffic chất lượng, hành vi người dùng và khả năng
+              tạo lead, thay vì chỉ chạy theo số lượng bài viết hay thứ hạng
+              ngắn hạn.
+              <span class="block text-sm mt-2 opacity-60 italic"
+                >(Số liệu minh họa dựa trên các dự án cùng phân khúc)</span
+              >
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div
+              class="bg-dark-900 rounded-2xl p-8 border border-white/5 hover:border-accent/50 transition-all duration-300 group shadow-xl"
+            >
+              <div class="flex items-center justify-between mb-8">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-lg bg-dark-800 flex items-center justify-center text-accent"
+                  >
+                    <i data-feather="home" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-light-100">
+                      Construction Firm
+                    </h3>
+                    <p class="text-sm text-light-500">Dự án Xây dựng</p>
+                  </div>
                 </div>
+                <span
+                  class="bg-primary-500/20 text-accent text-xs font-bold px-3 py-1 rounded-full border border-primary-500/30"
+                  >Growth</span
+                >
+              </div>
+              <div class="space-y-6">
+                <div
+                  class="flex justify-between items-end border-b border-white/5 pb-4"
+                >
+                  <div>
+                    <p class="text-xs text-light-500 uppercase">Mục tiêu</p>
+                    <p class="text-lg font-medium text-light-400">
+                      Tăng Organic Traffic
+                    </p>
+                  </div>
+                  <i data-feather="arrow-right" class="text-dark-700"></i>
+                  <div class="text-right">
+                    <p class="text-xs text-accent uppercase">Kết quả</p>
+                    <p class="text-2xl font-bold text-white">
+                      x3
+                      <span class="text-sm font-normal text-light-400"
+                        >Traffic</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-xs text-light-500 uppercase mb-2">
+                    Tác động kinh doanh
+                  </p>
+                  <div class="flex items-center gap-2">
+                    <i
+                      data-feather="trending-up"
+                      class="text-accent w-5 h-5"
+                    ></i
+                    ><span class="text-xl font-bold text-light-200"
+                      >Tăng Leads chất lượng</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+
+            <div
+              class="bg-dark-900 rounded-2xl p-8 border border-white/5 hover:border-accent/50 transition-all duration-300 group shadow-xl"
+            >
+              <div class="flex items-center justify-between mb-8">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-lg bg-dark-800 flex items-center justify-center text-blue-400"
+                  >
+                    <i data-feather="globe" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-light-100">
+                      B2B Education
+                    </h3>
+                    <p class="text-sm text-light-500">Đào tạo Tiếng Anh</p>
+                  </div>
+                </div>
+                <span
+                  class="bg-blue-500/20 text-blue-400 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/30"
+                  >Niche Authority</span
+                >
+              </div>
+              <div class="space-y-6">
+                <div
+                  class="flex justify-between items-end border-b border-white/5 pb-4"
+                >
+                  <div>
+                    <p class="text-xs text-light-500 uppercase">Vấn đề</p>
+                    <p class="text-lg font-medium text-light-400">
+                      Traffic dậm chân tại chỗ
+                    </p>
+                  </div>
+                  <i data-feather="arrow-right" class="text-dark-700"></i>
+                  <div class="text-right">
+                    <p class="text-xs text-accent uppercase">Giải pháp</p>
+                    <p class="text-2xl font-bold text-white">Topic Cluster</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-xs text-light-500 uppercase mb-2">Hiệu quả</p>
+                  <div class="flex items-center gap-2">
+                    <i data-feather="users" class="text-blue-400 w-5 h-5"></i
+                    ><span class="text-xl font-bold text-light-200"
+                      >Phủ sóng từ khóa ngành</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 px-4 bg-dark-900">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6"
+          >
+            <div class="max-w-2xl">
+              <span
+                class="text-accent font-bold tracking-widest uppercase text-xs"
+                >Dịch vụ cốt lõi</span
+              >
+              <h2 class="text-3xl md:text-4xl font-bold text-light-100 mt-2">
+                Giải pháp Nội dung Chuyên biệt
+              </h2>
+              <p class="text-light-400 text-lg mt-4 max-w-2xl">
+                Không phải doanh nghiệp nào cũng cần cùng một loại content.<br />
+                Chúng tôi xây dựng từng giải pháp nội dung để
+                <strong>giải quyết đúng vấn đề SEO và chuyển đổi</strong>
+                mà team marketing đang gặp phải.
+              </p>
+            </div>
+            <a
+              href="services.html"
+              class="text-light-300 hover:text-accent font-medium flex items-center transition-colors"
+            >
+              Xem chi tiết dịch vụ
+              <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+            </a>
+          </div>
+          <div class="grid lg:grid-cols-3 gap-6">
+            <div
+              class="p-8 bg-dark-800 rounded-2xl border border-white/5 hover:border-primary-500/50 transition-all duration-300 group"
+            >
+              <h3 class="text-2xl font-bold text-light-100 mb-4">
+                Triển khai Topic Cluster
+              </h3>
+              <p class="text-light-400 mb-6 text-sm h-16">
+                Xây dựng mạng lưới nội dung bao phủ chủ đề. Giúp Google hiểu bạn
+                là chuyên gia số 1 trong ngành.
+              </p>
+              <ul class="space-y-3 text-sm text-light-300">
+                <li class="flex items-center">
+                  <i
+                    data-feather="check"
+                    class="w-4 h-4 text-primary-500 mr-2"
+                  ></i>
+                  Bài Pillar chuyên sâu
+                </li>
+              </ul>
+            </div>
+            <div
+              class="p-8 bg-gradient-to-b from-primary-900/20 to-dark-800 rounded-2xl border border-primary-500/30 relative group"
+            >
+              <div
+                class="absolute top-0 right-0 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg"
+              >
+                Recommended
+              </div>
+              <h3 class="text-2xl font-bold text-light-100 mb-4">
+                Content Chuẩn EEAT
+              </h3>
+              <p class="text-light-400 mb-6 text-sm h-16">
+                Nội dung 100% Human-written. Tập trung vào trải nghiệm người
+                dùng và intent tìm kiếm thực tế.
+              </p>
+              <ul class="space-y-3 text-sm text-light-300">
+                <li class="flex items-center">
+                  <i data-feather="check" class="w-4 h-4 text-accent mr-2"></i>
+                  Tối ưu Search Intent
+                </li>
+              </ul>
+            </div>
+            <div
+              class="p-8 bg-dark-800 rounded-2xl border border-white/5 hover:border-primary-500/50 transition-all duration-300 group"
+            >
+              <h3 class="text-2xl font-bold text-light-100 mb-4">
+                Audit & Tối ưu Content
+              </h3>
+              <p class="text-light-400 mb-6 text-sm h-16">
+                Làm mới nội dung cũ (Content Refresh), cập nhật thông tin để lấy
+                lại thứ hạng từ đối thủ.
+              </p>
+              <ul class="space-y-3 text-sm text-light-300">
+                <li class="flex items-center">
+                  <i
+                    data-feather="check"
+                    class="w-4 h-4 text-primary-500 mr-2"
+                  ></i>
+                  Content Gap Analysis
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 px-4 bg-dark-800 border-y border-white/5">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <!-- LEFT CONTENT -->
+            <div>
+              <h2 class="text-3xl font-bold text-light-100 mb-6">
+                Tiêu chuẩn <span class="text-accent">Nội dung</span>
+              </h2>
+              <p class="text-light-400 text-lg mb-8">
+                Trong bối cảnh nội dung AI ngày càng phổ biến, chúng tôi tập
+                trung vào
+                <strong
+                  >chất lượng, tính chính xác và trải nghiệm người đọc</strong
+                >
+                để nội dung thực sự mang lại giá trị dài hạn cho doanh nghiệp.
+              </p>
+
+              <div class="flex gap-4">
+                <div
+                  class="p-4 bg-dark-900 rounded-lg border-l-4 border-accent"
+                >
+                  <div class="text-2xl font-bold text-light-100">Biên tập</div>
+                  <div class="text-sm text-light-400">
+                    Có kiểm duyệt & nghiệm thu
+                  </div>
+                </div>
+                <div
+                  class="p-4 bg-dark-900 rounded-lg border-l-4 border-primary-500"
+                >
+                  <div class="text-2xl font-bold text-light-100">Nội dung</div>
+                  <div class="text-sm text-light-400">
+                    Không đạo văn, không nội dung rác
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="space-y-6">
+              <div
+                class="flex gap-5 p-4 rounded-xl border border-transparent hover:bg-white/5"
+              >
+                <div class="mt-1">
+                  <i data-feather="shield" class="w-8 h-8 text-accent"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-light-200">
+                    Biên tập đa tầng
+                  </h3>
+                  <p class="text-light-400 text-sm mt-2">
+                    Mỗi bài viết đều được rà soát về cấu trúc SEO và nội dung
+                    chuyên môn, đảm bảo dễ đọc, đúng ngữ cảnh và phù hợp ngành.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex gap-5 p-4 rounded-xl border border-transparent hover:bg-white/5"
+              >
+                <div class="mt-1">
+                  <i data-feather="target" class="w-8 h-8 text-primary-500"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-light-200">
+                    Tập trung Search Intent
+                  </h3>
+                  <p class="text-light-400 text-sm mt-2">
+                    Nội dung được xây dựng dựa trên câu hỏi và nhu cầu thực tế
+                    của người tìm kiếm, tránh viết lan man hay nhồi nhét từ
+                    khóa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 px-4 bg-dark-800">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-light-100 mb-4">
+              Quy trình làm việc
+            </h2>
+            <p
+              class="text-light-400 text-lg max-w-2xl mb-12 mx-auto text-center"
+            >
+              Chúng tôi triển khai nội dung theo quy trình rõ ràng, có người
+              chịu trách nhiệm ở từng bước, tập trung vào
+              <strong>hiệu quả SEO và khả năng tạo lead</strong>, thay vì chỉ
+              xuất bản bài viết theo cảm tính.
+            </p>
+          </div>
+          <div class="relative">
+            <div
+              class="hidden lg:block absolute left-1/2 top-0 h-full w-0.5 bg-gradient-to-b from-accent/30 to-transparent"
+            ></div>
+            <div class="space-y-12">
+              <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-5/12 text-center lg:text-right">
+                  <h3 class="text-xl font-bold text-light-200 mb-2">
+                    1. Nghiên cứu & định hướng nội dung
+                  </h3>
+                  <p class="text-light-400 text-sm">
+                    Phân tích nhu cầu tìm kiếm, đối thủ và nội dung hiện có của
+                    website để xác định chủ đề cần làm trước, tránh viết lan man
+                    hoặc trùng lặp.
+                  </p>
+                </div>
+                <div
+                  class="hidden lg:flex lg:items-center lg:justify-center lg:w-2/12"
+                >
+                  <div
+                    class="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center text-accent font-bold"
+                  >
+                    1
+                  </div>
+                </div>
+                <div class="lg:w-5/12"></div>
+              </div>
+              <div
+                class="lg:flex lg:items-center lg:justify-between flex-row-reverse"
+              >
+                <div class="lg:w-5/12 text-center lg:text-left">
+                  <h3 class="text-xl font-bold text-light-200 mb-2">
+                    2. Xây dựng bộ từ khóa ưu tiên
+                  </h3>
+                  <p class="text-light-400 text-sm">
+                    Lựa chọn từ khóa dựa trên mức độ liên quan đến dịch vụ, khả
+                    năng chuyển đổi và giai đoạn ra quyết định của người tìm
+                    kiếm.
+                  </p>
+                </div>
+                <div
+                  class="hidden lg:flex lg:items-center lg:justify-center lg:w-2/12"
+                >
+                  <div
+                    class="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center text-accent font-bold"
+                  >
+                    2
+                  </div>
+                </div>
+                <div class="lg:w-5/12"></div>
+              </div>
+              <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-5/12 text-center lg:text-right">
+                  <h3 class="text-xl font-bold text-light-200 mb-2">
+                    3. Sản xuất & biên tập nội dung
+                  </h3>
+                  <p class="text-light-400 text-sm">
+                    Nội dung được viết dựa trên outline rõ ràng, biên tập về
+                    chuyên môn và cấu trúc SEO, đảm bảo dễ đọc, đúng ngữ cảnh và
+                    phù hợp ngành.
+                  </p>
+                </div>
+                <div
+                  class="hidden lg:flex lg:items-center lg:justify-center lg:w-2/12"
+                >
+                  <div
+                    class="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center text-accent font-bold"
+                  >
+                    3
+                  </div>
+                </div>
+                <div class="lg:w-5/12"></div>
+              </div>
+              <div
+                class="lg:flex lg:items-center lg:justify-between flex-row-reverse"
+              >
+                <div class="lg:w-5/12 text-center lg:text-left">
+                  <h3 class="text-xl font-bold text-light-200 mb-2">
+                    4. Theo dõi, báo cáo & tối ưu
+                  </h3>
+                  <p class="text-light-400 text-sm">
+                    Theo dõi hiệu quả nội dung dựa trên traffic, hành vi người
+                    dùng và tín hiệu chuyển đổi; cập nhật và tối ưu định kỳ theo
+                    dữ liệu thực tế.
+                  </p>
+                </div>
+                <div
+                  class="hidden lg:flex lg:items-center lg:justify-center lg:w-2/12"
+                >
+                  <div
+                    class="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center text-accent font-bold"
+                  >
+                    4
+                  </div>
+                </div>
+                <div class="lg:w-5/12"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-24 px-4 bg-gradient-to-br from-dark-900 to-primary-900/20 text-center relative overflow-hidden"
+      >
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-accent/10 blur-[100px] rounded-full pointer-events-none"
+        ></div>
+        <div class="max-w-3xl mx-auto relative z-10">
+          <h2 class="text-3xl md:text-5xl font-bold text-light-100 mb-6">
+            Đừng để Website đánh mất <br />
+            <span class="text-accent">Lợi thế Cạnh tranh</span>
+          </h2>
+          <p class="text-xl text-light-400 mb-10">
+            Đối thủ đang xây dựng Authority mỗi ngày. Hãy bắt đầu ngay hôm nay
+            để dẫn đầu thị trường ngách của bạn.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="contact.html"
+              class="bg-accent text-dark-900 font-bold px-10 py-4 rounded-xl hover:scale-105 transition-transform shadow-lg shadow-accent/20"
+            >
+              Đăng ký Tư vấn Chiến lược
+            </a>
+            <a
+              href="services.html"
+              class="px-10 py-4 rounded-xl border border-white/10 text-light-300 font-semibold hover:bg-white/5 transition-colors"
+            >
+              Xem Quy trình & Bảng giá
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <custom-footer></custom-footer>
-
     <script src="components/header.js"></script>
     <script src="components/footer.js"></script>
-    <script src="script.js"></script>
-    <script>feather.replace();</script>
-</body>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
