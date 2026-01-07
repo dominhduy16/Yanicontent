@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | VietSEO Content Masters</title>
+    <meta
+      name="description"
+      content="Learn about our content philosophy and editorial standards. We're SEO content specialists serving Vietnamese businesses in construction, healthcare, and B2B services."
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind CDN (for prototype) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Feather Icons (keep ONE source only) -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: { 500: "#2F8F5B", 600: "#3FBF8C", 700: "#1E6640" },
+              dark: { 900: "#0B1F17", 800: "#0F2A20", 700: "#163629" },
+              light: {
+                100: "#F5F7F6",
+                200: "#E6F4EE",
+                300: "#C7D7D1",
+                400: "#7A968B",
+              },
+              accent: "#5EE0B6",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-dark-900 text-light-300 font-sans antialiased">
+    <custom-header></custom-header>
+
+    <main>
+      <!-- Hero Section (KEEP) -->
+      <section
+        class="relative bg-dark-900 pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 opacity-30"
+          style="
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHg9IjAiIHk9IjAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDMiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=');
+          "
+        ></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+          <div class="text-center">
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-bold text-light-200 mb-6"
+            >
+              About <span class="text-accent">VietSEO Content</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-light-300 max-w-3xl mx-auto">
+              Our philosophy, standards, and commitment to quality SEO content.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission / Why We Exist -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-800">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Left: Why We Exist -->
+            <div>
+              <h2 class="text-3xl font-bold text-light-200 mb-6">
+                Why We Exist
+              </h2>
+
+              <p class="text-light-400 mb-6">
+                VietSEO Content was founded to solve a common problem we
+                repeatedly encountered when working with Vietnamese business
+                websites.
+              </p>
+
+              <p class="text-light-400 mb-6">
+                Many companies invest heavily in SEO content, yet their websites
+                struggle to generate qualified leads. Articles attract traffic
+                but fail to convert, content focuses on keywords instead of real
+                customer questions, and blogs grow in volume without building
+                trust or authority.
+              </p>
+
+              <p class="text-light-400">
+                We exist to close that gap — helping established businesses
+                build genuine topical authority through intent-driven SEO
+                content that supports long-term growth, not short-term ranking
+                tactics.
+              </p>
+            </div>
+
+            <!-- Right: Content Philosophy -->
+            <div
+              class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 shadow-xl"
+            >
+              <h3 class="text-xl font-bold text-light-200 mb-4">
+                Our Content Philosophy
+              </h3>
+
+              <p class="text-light-400 mb-6">
+                We believe effective SEO content does not come from keyword
+                stuffing or mass production. It comes from understanding why
+                someone is searching and helping them move closer to a decision.
+              </p>
+
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    People-first content aligned with real search intent
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    Quality over quantity — every article serves a clear purpose
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    Long-term strategy over short-term ranking tactics
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    Transparency in research, structure, and recommendations
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    Ethical, sustainable SEO practices that support brand trust
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Experience -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-900">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-light-200 mb-4">
+              Our Experience
+            </h2>
+            <p class="text-xl text-light-400 max-w-3xl mx-auto">
+            Practical experience across industries where content quality, accuracy, and trust directly impact business decisions.
+            Our experience comes from long-term collaboration with service-based businesses, where content is expected to support informed decision-making, build credibility, and contribute to sustainable growth -> not short-term ranking tactics or mass content output.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Construction -->
+            <div
+              class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5"
+            >
+              <div
+                class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-lg mb-6"
+              >
+                <i data-feather="home" class="text-accent w-8 h-8"></i>
+              </div>
+              <h3 class="text-xl font-bold text-light-200 mb-3">
+                Construction
+              </h3>
+              <p class="text-light-400">
+                Technical SEO content for construction companies, architects,
+                and material suppliers. We focus on clear explanations and
+                trust-driven content for high-value service projects.
+              </p>
+            </div>
+
+            <!-- Healthcare -->
+            <div
+              class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5"
+            >
+              <div
+                class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-lg mb-6"
+              >
+                <i data-feather="heart" class="text-accent w-8 h-8"></i>
+              </div>
+              <h3 class="text-xl font-bold text-light-200 mb-3">Healthcare</h3>
+              <p class="text-light-400">
+                SEO content for healthcare providers where accuracy and trust
+                are critical. Our process emphasizes careful research and
+                responsible editorial review.
+              </p>
+            </div>
+
+            <!-- B2B Services -->
+            <div
+              class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5"
+            >
+              <div
+                class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-lg mb-6"
+              >
+                <i data-feather="briefcase" class="text-accent w-8 h-8"></i>
+              </div>
+              <h3 class="text-xl font-bold text-light-200 mb-3">
+                B2B Services
+              </h3>
+              <p class="text-light-400">
+                Content for B2B service websites targeting decision-makers and
+                long sales cycles. We structure content to support evaluation,
+                trust-building, and lead qualification.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Expertise & Methodology -->
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-800">
+  <div class="max-w-7xl mx-auto">
+    
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-light-200 mb-4">
+        Our Expertise & Methodology
+      </h2>
+      <p class="text-xl text-light-400 max-w-3xl mx-auto">
+        A practical, business-focused approach to SEO content — designed for clarity,
+        trust, and long-term lead generation.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5">
+        <h3 class="text-xl font-bold text-light-200 mb-4">
+          We Write for the Right Audience
+        </h3>
+        <p class="text-light-400 mb-4">
+          Instead of writing content for search engines alone, we focus on who is actually
+          searching and what decision they are trying to make.
+        </p>
+        <p class="text-light-400">
+          This ensures your content attracts visitors who are more likely to become real
+          inquiries, not just page views.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5">
+        <h3 class="text-xl font-bold text-light-200 mb-4">
+          Content That Supports Business Goals
+        </h3>
+        <p class="text-light-400 mb-4">
+          Every article is created with a clear purpose — whether to educate, build trust,
+          or guide potential customers toward contacting your business.
+        </p>
+        <p class="text-light-400">
+          We structure content to support long sales cycles and high-consideration services,
+          common in B2B and professional industries.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Optional trust note -->
+    <div class="text-center mt-10 max-w-3xl mx-auto">
+      <p class="text-sm text-light-400">
+        Behind the scenes, we apply modern SEO best practices such as search intent analysis,
+        topic clustering, and editorial quality checks — without adding unnecessary complexity
+        for our clients.
+      </p>
+    </div>
+  </div>
+    <!-- Optional internal link block (kept subtle) -->
+          <div class="text-center mt-10">
+            <a
+              href="services.html"
+              class="inline-flex items-center text-accent underline hover:no-underline"
+            >
+              Explore our service approach
+              <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+    </section>
+
+
+        
+
+      <!-- Editorial Standards (KEEP + FIXED continuation) -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-800">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-light-200 mb-4">
+              Editorial Standards
+            </h2>
+            <p class="text-xl text-light-400 max-w-3xl mx-auto">
+              Our rigorous process ensures every piece meets high standards.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12">
+            <!-- Left: Process -->
+            <div>
+              <h3 class="text-2xl font-bold text-light-200 mb-6">
+                Quality Control Process
+              </h3>
+
+              <div class="space-y-8">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 mr-4">
+                    <div
+                      class="flex items-center justify-center w-12 h-12 bg-primary-500/10 rounded-lg"
+                    >
+                      <span class="text-accent text-xl font-bold">1</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-light-200 mb-2">
+                      Research & Outline
+                    </h4>
+                    <p class="text-light-400">
+                      Comprehensive research and a structured outline are
+                      confirmed before writing begins.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 mr-4">
+                    <div
+                      class="flex items-center justify-center w-12 h-12 bg-primary-500/10 rounded-lg"
+                    >
+                      <span class="text-accent text-xl font-bold">2</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-light-200 mb-2">
+                      Writing & Optimization
+                    </h4>
+                    <p class="text-light-400">
+                      We write with intent alignment, clear structure, and
+                      on-page optimization (headings, readability, internal
+                      links).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 mr-4">
+                    <div
+                      class="flex items-center justify-center w-12 h-12 bg-primary-500/10 rounded-lg"
+                    >
+                      <span class="text-accent text-xl font-bold">3</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-light-200 mb-2">
+                      Editorial Review
+                    </h4>
+                    <p class="text-light-400">
+                      Each piece is reviewed for clarity, factual accuracy,
+                      brand tone, and search intent match before delivery.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 mr-4">
+                    <div
+                      class="flex items-center justify-center w-12 h-12 bg-primary-500/10 rounded-lg"
+                    >
+                      <span class="text-accent text-xl font-bold">4</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-light-200 mb-2">
+                      Delivery & Revisions
+                    </h4>
+                    <p class="text-light-400">
+                      Final content is delivered with revision support to match
+                      your brief and brand voice.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: What we check -->
+            <div
+              class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 shadow-xl"
+            >
+              <h3 class="text-2xl font-bold text-light-200 mb-6">
+                What We Check
+              </h3>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i
+                    data-feather="check-circle"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5"
+                  ></i>
+                  <span class="text-light-400"
+                    >Search intent alignment (commercial vs informational)</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check-circle"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5"
+                  ></i>
+                  <span class="text-light-400"
+                    >Clarity, readability, and logical structure</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check-circle"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5"
+                  ></i>
+                  <span class="text-light-400"
+                    >Accuracy and consistency with your services</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check-circle"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5"
+                  ></i>
+                  <span class="text-light-400"
+                    >SEO best practices without keyword stuffing</span
+                  >
+                </li>
+              </ul>
+
+              <div class="mt-8">
+                <a
+                  href="services.html"
+                  class="inline-flex items-center bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition-all duration-300"
+                >
+                  View Services
+                  <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ADDED: Acceptance Standards (EEAT Trust signal) -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-900">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-light-200 mb-4">
+              Content Acceptance Standards
+            </h2>
+            <p class="text-xl text-light-400 max-w-3xl mx-auto">
+              Clear standards ensure consistency, accuracy, and business
+              alignment.
+            </p>
+          </div>
+
+          <div
+            class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 max-w-4xl mx-auto"
+          >
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <i
+                  data-feather="check-circle"
+                  class="text-accent w-5 h-5 mr-3 mt-0.5"
+                ></i>
+                <span class="text-light-400"
+                  >Original content (no duplication, no resale)</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-feather="check-circle"
+                  class="text-accent w-5 h-5 mr-3 mt-0.5"
+                ></i>
+                <span class="text-light-400"
+                  >Intent match (answers what the searcher actually wants)</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-feather="check-circle"
+                  class="text-accent w-5 h-5 mr-3 mt-0.5"
+                ></i>
+                <span class="text-light-400"
+                  >Readable structure (H2–H3 hierarchy, scannable layout)</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-feather="check-circle"
+                  class="text-accent w-5 h-5 mr-3 mt-0.5"
+                ></i>
+                <span class="text-light-400"
+                  >No keyword stuffing or misleading claims</span
+                >
+              </li>
+            </ul>
+
+            <div class="mt-8 text-sm text-light-400">
+              If AI is used at any stage, it is reviewed and verified by a human
+              editor before delivery.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ADDED: Human Responsibility (EEAT: real people) -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-800">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl font-bold text-light-200 mb-6">
+                The People Behind the Content
+              </h2>
+              <p class="text-light-400 mb-4">
+                Every deliverable has clear ownership. We believe accountability
+                is essential for trust and accuracy.
+              </p>
+              <p class="text-light-400">
+                The content lead is responsible for strategy, editorial
+                standards, and final approval before delivery.
+              </p>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 shadow-xl"
+            >
+              <h3 class="text-xl font-bold text-light-200 mb-2">
+                Content Strategist / SEO Content Lead
+              </h3>
+              <p class="text-light-400 mb-4">
+                Responsible for content direction, quality control, and EEAT
+                compliance.
+              </p>
+              <!-- If you don't have author page yet, keep as placeholder -->
+              <a
+                href="author.html"
+                class="text-accent underline hover:no-underline"
+              >
+                View author profile →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ADDED: Transparency + Soft CTA -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-900">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-light-200 mb-6">
+            Transparency & Responsibility
+          </h2>
+          <p class="text-light-400 mb-8">
+            We commit to ethical content practices, confidentiality, and
+            transparent collaboration.
+          </p>
+
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="services.html"
+              class="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-8 py-3 rounded-lg shadow transition"
+            >
+              View SEO Content Services
+            </a>
+            <a
+              href="contact.html"
+              class="border border-accent/50 hover:bg-accent/10 text-accent font-semibold px-8 py-3 rounded-lg transition"
+            >
+              Contact Us
+            </a>
+          </div>
+
+          <p class="text-sm text-light-400 mt-6">
+            For fast consultation and pricing in Vietnam, Zalo is typically the
+            quickest channel.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <!-- Load components AFTER DOM -->
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      if (window.feather) feather.replace();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f2a20;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2f8f5b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3fbf8c;
+}
+
+/* Link hover effects */
+a {
+  transition: all 0.3s ease;
+}
+
+.text-link:hover {
+  color: #5ee0b6;
+  text-decoration: underline;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effects */
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(47, 143, 91, 0.5);
+}
+
+.btn-outline {
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: rgba(94, 224, 182, 0.1);
+}
+
+/* Responsive typography */
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Animation for icons */
+.feather {
+  transition: all 0.3s ease;
+}
+
+a:hover .feather-arrow-right {
+  transform: translateX(3px);
+}
+
+/* Section spacing */
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(145deg, #5ee0b6 0%, #2f8f5b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* Noise Texture Background */
+.bg-noise {
+  position: relative;
+}
+
+.bg-noise::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  z-index: -1;
+}
+
+/* Glassmorphism Effect */
+.glass-card {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(94, 224, 182, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Filter Buttons */
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: rgba(47, 143, 91, 0.1);
+  color: #7a968b;
+  transition: all 0.2s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #2f8f5b;
+  color: #f5f7f6;
+}
+
+/* Article Cards */
+.article-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Pagination */
+.pagination-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+  color: #7a968b;
+  transition: all 0.2s ease;
+}
+
+.pagination-btn.active,
+.pagination-btn:hover {
+  background-color: #2f8f5b;
+  color: #f5f7f6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f2a20;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2f8f5b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5ee0b6;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.article-card {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.article-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.article-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.article-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.article-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.article-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.article-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.article-card:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.article-card:nth-child(8) {
+  animation-delay: 0.8s;
+}
