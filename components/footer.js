@@ -127,10 +127,10 @@ class CustomFooter extends HTMLElement {
             <div class="footer-container">
                 <div class="footer-about">
                     <a href="index.html" class="footer-logo">
-                        VietSEO<span>Content</span>
+                        Yani<span>Content</span>
                     </a>
                     <p>
-                        VietSEO Content là đơn vị tiên phong trong giải pháp nội dung chuẩn EEAT. 
+                        Yani Content là đơn vị tiên phong trong giải pháp nội dung chuẩn EEAT. 
                         Chúng tôi giúp doanh nghiệp B2B xây dựng vị thế chuyên gia (Authority) 
                         thông qua chiến lược nội dung bền vững.
                     </p>
@@ -162,7 +162,7 @@ class CustomFooter extends HTMLElement {
 
                 <div class="footer-contact">
                     <h3>Kết nối ngay</h3>
-                    <p><i data-feather="mail"></i> contact@vietseocontent.com</p>
+                    <p><i data-feather="mail"></i> contact@Yanicontent.com</p>
                     <p><i data-feather="phone"></i> +84 123 456 789 (Zalo)</p>
                     <p><i data-feather="map-pin"></i> Tòa nhà Innovation, Hà Nội, VN</p>
                     
@@ -175,7 +175,7 @@ class CustomFooter extends HTMLElement {
 
             <div class="footer-bottom">
                 <p class="copyright">
-                    &copy; ${new Date().getFullYear()} VietSEO Content Master. All rights reserved.
+                    &copy; ${new Date().getFullYear()} Yani Content Master. All rights reserved.
                 </p>
                 <div class="social-links">
                     <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
