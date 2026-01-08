@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Contact | VietSEO Content</title>
+    <title>Liên hệ | Yani Content</title>
     <meta
       name="description"
-      content="Contact VietSEO Content to discuss strategic SEO content writing for Vietnamese businesses. Zalo-first communication for faster consultation."
+      content="Liên hệ Yani Content để tư vấn chiến lược nội dung SEO cho doanh nghiệp Việt Nam. Trao đổi nhanh qua Zalo để nhận báo giá và tư vấn miễn phí."
     />
 
-    <!-- Your global stylesheet -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Tailwind CDN (MUST exist on every page that uses Tailwind classes) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Feather Icons (keep ONE source only) -->
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <!-- Tailwind theme config (MUST match About page for consistent design) -->
     <script>
       tailwind.config = {
         theme: {
@@ -31,7 +27,7 @@
                 100: "#F5F7F6",
                 200: "#E6F4EE",
                 300: "#C7D7D1",
-                400: "#7A968B",
+                400: "#9CAFA7",
               },
               accent: "#5EE0B6",
             },
@@ -39,17 +35,20 @@
         },
       };
     </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
 
   <body class="bg-dark-900 text-light-300 font-sans antialiased">
     <custom-header></custom-header>
 
     <main>
-      <!-- HERO -->
       <section
-        class="relative bg-dark-900 pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
+        class="relative bg-dark-900 pt-36 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
       >
-        <!-- subtle noise -->
         <div
           class="absolute inset-0 opacity-30"
           style="
@@ -59,27 +58,29 @@
 
         <div class="max-w-4xl mx-auto relative z-10 text-center">
           <h1 class="text-4xl md:text-5xl font-bold text-light-200 mb-6">
-            Contact <span class="text-accent">VietSEO Content</span>
+            Liên hệ
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary-500"
+              >Yani Content</span
+            >
           </h1>
           <p class="text-xl text-light-400">
-            Let’s discuss whether strategic SEO content is the right fit for
-            your business.
+            Cùng thảo luận xem liệu chiến lược nội dung SEO có phải là mảnh ghép
+            phù hợp cho doanh nghiệp của bạn lúc này.
           </p>
         </div>
       </section>
 
-      <!-- CONTACT METHODS + FORM -->
       <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-800">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
-          <!-- Left: Contact options -->
           <div>
             <h2 class="text-2xl font-bold text-light-200 mb-4">
-              Preferred Contact Method
+              Kênh liên hệ ưu tiên
             </h2>
             <p class="text-light-400 mb-8">
-              For businesses in Vietnam, Zalo is usually the quickest way to
-              clarify requirements, timelines, and budget expectations — without
-              unnecessary back-and-forth.
+              Với các doanh nghiệp tại Việt Nam, Zalo thường là cách nhanh nhất
+              để làm rõ yêu cầu, tiến độ và ngân sách — tránh việc trao đổi qua
+              lại mất thời gian.
             </p>
 
             <div class="space-y-4">
@@ -92,23 +93,24 @@
                     class="text-accent w-5 h-5 mr-3"
                   ></i>
                   <h3 class="text-lg font-semibold text-light-200">
-                    Zalo (fastest)
+                    Zalo (Nhanh nhất)
                   </h3>
                 </div>
                 <p class="text-light-400 mb-3">
-                  Chat for pricing, timelines, and service fit.
+                  Chat để nhận báo giá, timeline và tư vấn giải pháp phù hợp.
                 </p>
                 <a
-                  href="#"
-                  class="inline-flex items-center bg-primary-500 hover:bg-primary-600 text-white font-semibold px-5 py-3 rounded-lg shadow transition"
+                  href="https://zalo.me/0909090909"
+                  target="_blank"
+                  class="inline-flex items-center bg-primary-500 hover:bg-primary-600 text-white font-semibold px-5 py-3 rounded-lg shadow transition transform hover:-translate-y-1"
                 >
-                  Chat on Zalo
+                  Chat ngay trên Zalo
                   <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
                 </a>
                 <p class="text-sm text-light-400 mt-3">
                   Zalo:
                   <span class="text-light-300 font-semibold"
-                    >[Your Zalo Number]</span
+                    >0909.xxx.xxx (Mr. Duy)</span
                   >
                 </p>
               </div>
@@ -120,166 +122,346 @@
                   <i data-feather="mail" class="text-accent w-5 h-5 mr-3"></i>
                   <h3 class="text-lg font-semibold text-light-200">Email</h3>
                 </div>
-                <p class="text-light-400">contact@vietseocontent.com</p>
+                <p class="text-light-400 hover:text-accent transition-colors">
+                  <a href="mailto:contact@yanicontent.com"
+                    >contact@yanicontent.com</a
+                  >
+                </p>
               </div>
             </div>
 
             <p class="mt-6 text-sm text-light-400">
-              We respond to qualified inquiries within
-              <span class="text-light-300 font-semibold">1 working day</span>.
+              Chúng tôi phản hồi các yêu cầu phù hợp trong vòng
+              <span class="text-light-300 font-semibold">1 ngày làm việc</span>.
             </p>
 
-            <!-- Soft qualification -->
             <div
               class="mt-8 p-6 rounded-xl border border-white/5 bg-gradient-to-br from-dark-700 to-dark-800"
             >
               <h3 class="text-lg font-semibold text-light-200 mb-2">
-                Best fit for:
+                Phù hợp nhất với:
               </h3>
-              <ul class="space-y-2 text-light-400">
+              <ul class="space-y-2 text-light-400 text-sm">
                 <li class="flex items-start">
                   <i
                     data-feather="check"
                     class="text-accent w-4 h-4 mr-2 mt-1"
                   ></i>
-                  Businesses investing in content SEO long-term (6–12 months)
+                  Doanh nghiệp đầu tư SEO dài hạn (6–12 tháng)
                 </li>
                 <li class="flex items-start">
                   <i
                     data-feather="check"
                     class="text-accent w-4 h-4 mr-2 mt-1"
                   ></i>
-                  Service websites that need qualified leads, not just traffic
+                  Website dịch vụ cần leads chất lượng, không chỉ traffic ảo
                 </li>
                 <li class="flex items-start">
                   <i
                     data-feather="check"
                     class="text-accent w-4 h-4 mr-2 mt-1"
                   ></i>
-                  Teams that value editorial quality and clear process
+                  Đội ngũ coi trọng chất lượng biên tập và quy trình rõ ràng
                 </li>
               </ul>
+              <div class="mt-4 pt-4 border-t border-white/10">
+                <a
+                  href="services.html"
+                  class="text-accent text-sm hover:text-white flex items-center gap-1 transition-colors"
+                >
+                  Xem chi tiết Dịch vụ & Báo giá
+                  <i data-feather="arrow-right" class="w-3 h-3"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <!-- Right: Form -->
           <div
             class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 shadow-xl"
           >
             <h2 class="text-2xl font-bold text-light-200 mb-2">
-              Send a Project Inquiry
+              Gửi yêu cầu dự án
             </h2>
             <p class="text-light-400 mb-6">
-              Share a brief overview. We’ll reply with next steps and what we
-              need to evaluate.
+              Chia sẻ sơ lược về nhu cầu của bạn. Chúng tôi sẽ phản hồi với các
+              bước tiếp theo và những gì cần thiết để đánh giá.
             </p>
 
             <form class="space-y-4" action="#" method="post">
               <div>
                 <label class="block text-sm text-light-400 mb-2" for="name"
-                  >Your name</label
+                  >Họ tên *</label
                 >
                 <input
                   id="name"
                   name="name"
                   type="text"
                   required
-                  class="w-full px-4 py-3 bg-transparent border border-white/10 rounded-lg text-light-300 focus:border-[rgba(94,224,182,0.5)] outline-none"
+                  placeholder="VD: Nguyễn Văn A"
+                  class="w-full px-4 py-3 bg-dark-900 border border-white/10 rounded-lg text-light-300 focus:border-accent outline-none transition-colors"
                 />
               </div>
 
               <div>
                 <label class="block text-sm text-light-400 mb-2" for="email"
-                  >Business email</label
+                  >Email công việc *</label
                 >
                 <input
                   id="email"
                   name="email"
                   type="email"
                   required
-                  class="w-full px-4 py-3 bg-transparent border border-white/10 rounded-lg text-light-300 focus:border-[rgba(94,224,182,0.5)] outline-none"
+                  placeholder="name@company.com"
+                  class="w-full px-4 py-3 bg-dark-900 border border-white/10 rounded-lg text-light-300 focus:border-accent outline-none transition-colors"
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm text-light-400 mb-2" for="phone"
+                  >Số điện thoại / Zalo *</label
+                >
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  required
+                  placeholder="090..."
+                  class="w-full px-4 py-3 bg-dark-900 border border-white/10 rounded-lg text-light-300 focus:border-accent outline-none transition-colors"
                 />
               </div>
 
               <div>
                 <label class="block text-sm text-light-400 mb-2" for="website"
-                  >Company website (optional)</label
+                  >Website doanh nghiệp (Tùy chọn)</label
                 >
                 <input
                   id="website"
                   name="website"
                   type="url"
-                  class="w-full px-4 py-3 bg-transparent border border-white/10 rounded-lg text-light-300 focus:border-[rgba(94,224,182,0.5)] outline-none"
+                  placeholder="https://..."
+                  class="w-full px-4 py-3 bg-dark-900 border border-white/10 rounded-lg text-light-300 focus:border-accent outline-none transition-colors"
                 />
               </div>
 
               <div>
                 <label class="block text-sm text-light-400 mb-2" for="message"
-                  >What do you need help with?</label
+                  >Bạn cần hỗ trợ gì?</label
                 >
                 <textarea
                   id="message"
                   name="message"
                   rows="5"
                   required
-                  class="w-full px-4 py-3 bg-transparent border border-white/10 rounded-lg text-light-300 focus:border-[rgba(94,224,182,0.5)] outline-none"
-                  placeholder="Example: We want to build a 6–12 month SEO content plan and publish X articles/month to generate qualified leads."
+                  class="w-full px-4 py-3 bg-dark-900 border border-white/10 rounded-lg text-light-300 focus:border-accent outline-none transition-colors"
+                  placeholder="Ví dụ: Chúng tôi muốn xây dựng kế hoạch nội dung SEO 6-12 tháng và xuất bản X bài/tháng để tạo ra leads chất lượng."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                class="w-full bg-primary-500 hover:bg-primary-600 text-white font-semibold py-3 rounded-lg shadow transition"
+                class="w-full bg-primary-500 hover:bg-primary-600 text-white font-bold py-3 rounded-lg shadow-lg transition-all hover:-translate-y-1"
               >
-                Submit inquiry
+                Gửi yêu cầu ngay
               </button>
 
-              <p class="text-xs text-light-400 pt-2">
-                This form is intended for businesses evaluating long-term SEO
-                content collaboration. We do not provide “instant ranking”
-                promises.
+              <p class="text-xs text-light-400 pt-2 text-center opacity-70">
+                Form này dành cho doanh nghiệp đang tìm kiếm hợp tác nội dung
+                SEO dài hạn. Chúng tôi không cam kết các lời hứa "lên top tức
+                thì".
               </p>
             </form>
           </div>
         </div>
       </section>
 
-      <!-- LEGITIMACY / TRUST -->
-      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-900">
+      <section class="py-20 px-4 bg-dark-900 border-t border-white/5">
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-2xl font-bold text-light-200 mb-12">
+            Quy trình làm việc sau khi nhận yêu cầu
+          </h2>
+
+          <div class="grid md:grid-cols-4 gap-8 relative">
+            <div
+              class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-accent/20 to-transparent -translate-y-1/2 z-0"
+            ></div>
+
+            <div
+              class="relative z-10 bg-dark-900 px-4 group hover:-translate-y-1 transition-transform duration-300"
+            >
+              <div
+                class="w-16 h-16 mx-auto bg-dark-800 border border-accent/50 rounded-full flex items-center justify-center text-accent font-bold text-xl mb-4 shadow-[0_0_15px_rgba(94,224,182,0.1)] group-hover:shadow-[0_0_20px_rgba(94,224,182,0.3)] transition-all"
+              >
+                1
+              </div>
+              <h3 class="text-light-200 font-bold mb-2">Tiếp nhận</h3>
+              <p class="text-sm text-light-400">
+                Team Account xác nhận yêu cầu và liên hệ lại trong tối đa 30
+                phút (giờ hành chính).
+              </p>
+            </div>
+
+            <div
+              class="relative z-10 bg-dark-900 px-4 group hover:-translate-y-1 transition-transform duration-300"
+            >
+              <div
+                class="w-16 h-16 mx-auto bg-dark-800 border border-white/20 rounded-full flex items-center justify-center text-light-200 font-bold text-xl mb-4 group-hover:border-accent/50 transition-all"
+              >
+                2
+              </div>
+              <h3 class="text-light-200 font-bold mb-2">Nghiên cứu nhanh</h3>
+              <p class="text-sm text-light-400">
+                Chúng tôi xem qua website và lĩnh vực kinh doanh để hiểu sơ bộ
+                "bệnh lý" của dự án.
+              </p>
+            </div>
+
+            <div
+              class="relative z-10 bg-dark-900 px-4 group hover:-translate-y-1 transition-transform duration-300"
+            >
+              <div
+                class="w-16 h-16 mx-auto bg-dark-800 border border-white/20 rounded-full flex items-center justify-center text-light-200 font-bold text-xl mb-4 group-hover:border-accent/50 transition-all"
+              >
+                3
+              </div>
+              <h3 class="text-light-200 font-bold mb-2">Tư vấn 1:1</h3>
+              <p class="text-sm text-light-400">
+                Trao đổi trực tiếp qua Zalo/Meet để chốt phương án triển khai
+                phù hợp nhất với ngân sách.
+              </p>
+            </div>
+
+            <div
+              class="relative z-10 bg-dark-900 px-4 group hover:-translate-y-1 transition-transform duration-300"
+            >
+              <div
+                class="w-16 h-16 mx-auto bg-dark-800 border border-white/20 rounded-full flex items-center justify-center text-light-200 font-bold text-xl mb-4 group-hover:border-accent/50 transition-all"
+              >
+                4
+              </div>
+              <h3 class="text-light-200 font-bold mb-2">Gửi Báo giá</h3>
+              <p class="text-sm text-light-400">
+                Gửi Proposal chi tiết, minh bạch hạng mục công việc và cam kết
+                đầu ra.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-800">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-light-200 mb-4">
+              Câu hỏi thường gặp (FAQ)
+            </h2>
+            <p class="text-light-400">
+              Giải đáp nhanh những băn khoăn trước khi bạn gửi thông tin.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div
+              class="bg-dark-900 border border-white/5 rounded-xl p-6 hover:border-white/10 transition-colors"
+            >
+              <h3
+                class="text-lg font-bold text-light-200 mb-2 flex items-center gap-2"
+              >
+                <i data-feather="help-circle" class="text-accent w-5 h-5"></i>
+                Tư vấn và Audit Website có mất phí không?
+              </h3>
+              <p class="text-light-400 text-sm leading-relaxed pl-7">
+                Hoàn toàn KHÔNG. Chúng tôi tư vấn chiến lược và audit sơ bộ
+                website miễn phí. Bạn chỉ trả tiền khi hai bên ký hợp đồng triển
+                khai nội dung chính thức.
+              </p>
+            </div>
+
+            <div
+              class="bg-dark-900 border border-white/5 rounded-xl p-6 hover:border-white/10 transition-colors"
+            >
+              <h3
+                class="text-lg font-bold text-light-200 mb-2 flex items-center gap-2"
+              >
+                <i data-feather="help-circle" class="text-accent w-5 h-5"></i>
+                Yani Content có xuất hóa đơn VAT không?
+              </h3>
+              <p class="text-light-400 text-sm leading-relaxed pl-7">
+                Có. Chúng tôi là pháp nhân doanh nghiệp, xuất hóa đơn VAT đầy đủ
+                cho mọi hợp đồng dịch vụ B2B, đảm bảo tính pháp lý và minh bạch
+                tài chính.
+              </p>
+            </div>
+
+            <div
+              class="bg-dark-900 border border-white/5 rounded-xl p-6 hover:border-white/10 transition-colors"
+            >
+              <h3
+                class="text-lg font-bold text-light-200 mb-2 flex items-center gap-2"
+              >
+                <i data-feather="help-circle" class="text-accent w-5 h-5"></i>
+                Tôi ở xa (Hà Nội/Đà Nẵng) có làm việc được không?
+              </h3>
+              <p class="text-light-400 text-sm leading-relaxed pl-7">
+                Được. 90% khách hàng của chúng tôi làm việc online hiệu quả qua
+                Zalo/Google Meet. Quy trình báo cáo tiến độ minh bạch giúp bạn
+                nắm bắt tình hình dự án mọi lúc mọi nơi mà không cần gặp mặt.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <a
+              href="about.html"
+              class="text-light-400 hover:text-white text-sm border-b border-white/20 pb-1 inline-flex items-center gap-1 transition-colors"
+            >
+              Tìm hiểu thêm về Đội ngũ & Năng lực của chúng tôi
+              <i data-feather="arrow-right" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-900 border-t border-white/5"
+      >
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
           <div
-            class="p-6 rounded-xl border border-white/5 bg-gradient-to-br from-dark-700 to-dark-800"
+            class="p-6 rounded-xl border border-white/5 bg-gradient-to-br from-dark-800 to-dark-900"
           >
             <div class="flex items-center mb-2">
               <i data-feather="map-pin" class="text-accent w-5 h-5 mr-3"></i>
-              <h3 class="text-lg font-semibold text-light-200">Location</h3>
+              <h3 class="text-lg font-semibold text-light-200">Văn phòng</h3>
             </div>
-            <p class="text-light-400">Vietnam (remote-first)</p>
+            <p class="text-light-400 text-sm">
+              Tòa nhà Innovation, Quận 1, TP. Hồ Chí Minh (Vui lòng đặt hẹn
+              trước)
+            </p>
           </div>
 
           <div
-            class="p-6 rounded-xl border border-white/5 bg-gradient-to-br from-dark-700 to-dark-800"
+            class="p-6 rounded-xl border border-white/5 bg-gradient-to-br from-dark-800 to-dark-900"
           >
             <div class="flex items-center mb-2">
               <i data-feather="clock" class="text-accent w-5 h-5 mr-3"></i>
               <h3 class="text-lg font-semibold text-light-200">
-                Response time
+                Thời gian phản hồi
               </h3>
             </div>
-            <p class="text-light-400">Within 1 working day</p>
+            <p class="text-light-400 text-sm">Trong vòng 1 ngày làm việc</p>
           </div>
 
           <div
-            class="p-6 rounded-xl border border-white/5 bg-gradient-to-br from-dark-700 to-dark-800"
+            class="p-6 rounded-xl border border-white/5 bg-gradient-to-br from-dark-800 to-dark-900"
           >
             <div class="flex items-center mb-2">
               <i data-feather="shield" class="text-accent w-5 h-5 mr-3"></i>
               <h3 class="text-lg font-semibold text-light-200">
-                Confidentiality
+                Bảo mật thông tin
               </h3>
             </div>
-            <p class="text-light-400">
-              Project information is handled responsibly and never resold.
+            <p class="text-light-400 text-sm">
+              Thông tin dự án được xử lý trách nhiệm và cam kết không chia sẻ
+              với bên thứ ba.
             </p>
           </div>
         </div>
@@ -288,12 +470,10 @@
 
     <custom-footer></custom-footer>
 
-    <!-- IMPORTANT: load components like About page -->
-    <script src="header.js"></script>
-    <script src="footer.js"></script>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
     <script src="script.js"></script>
 
-    <!-- Feather replace AFTER everything is in the DOM -->
     <script>
       if (window.feather) feather.replace();
     </script>
