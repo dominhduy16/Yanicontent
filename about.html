@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | VietSEO Content Masters</title>
+    <title>Về VietSEO Content | Làm Thật - Ăn Thật - Ra Số Thật</title>
     <meta
       name="description"
-      content="Learn about our content philosophy and editorial standards. We're SEO content specialists serving Vietnamese businesses in construction, healthcare, and B2B services."
+      content="VietSEO Content: Đội ngũ làm nội dung SEO thực chiến tại TP.HCM. Không vẽ vời lý thuyết, chúng tôi tập trung xây dựng tài sản số giúp doanh nghiệp B2B bán được hàng."
     />
 
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Tailwind CDN (for prototype) -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Feather Icons (keep ONE source only) -->
     <script src="https://unpkg.com/feather-icons"></script>
 
     <script>
@@ -28,7 +24,7 @@
                 100: "#F5F7F6",
                 200: "#E6F4EE",
                 300: "#C7D7D1",
-                400: "#7A968B",
+                400: "#9CAFA7" /* Màu chữ đã tối ưu cho dễ đọc */,
               },
               accent: "#5EE0B6",
             },
@@ -36,18 +32,22 @@
         },
       };
     </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
 
   <body class="bg-dark-900 text-light-300 font-sans antialiased">
     <custom-header></custom-header>
 
     <main>
-      <!-- Hero Section (KEEP) -->
       <section
-        class="relative bg-dark-900 pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
+        class="relative bg-dark-900 pt-36 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
       >
         <div
-          class="absolute inset-0 opacity-30"
+          class="absolute inset-0 opacity-20"
           style="
             background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHg9IjAiIHk9IjAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMDMiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=');
           "
@@ -55,108 +55,199 @@
 
         <div class="max-w-7xl mx-auto relative z-10">
           <div class="text-center">
+            <div
+              class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-500/10 border border-primary-500/20 text-accent text-xs font-bold uppercase tracking-widest mb-6"
+            >
+              <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+              Cách chúng tôi làm nghề
+            </div>
+
             <h1
               class="text-4xl md:text-5xl lg:text-6xl font-bold text-light-200 mb-6"
             >
-              About <span class="text-accent">VietSEO Content</span>
+              Về
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary-500"
+                >VietSEO Content</span
+              >
             </h1>
-            <p class="text-xl md:text-2xl text-light-300 max-w-3xl mx-auto">
-              Our philosophy, standards, and commitment to quality SEO content.
+
+            <p
+              class="text-xl md:text-2xl text-light-400 max-w-3xl mx-auto font-light leading-relaxed"
+            >
+              Chúng tôi không làm SEO để "lấy le" với Google. Chúng tôi làm nội
+              dung để doanh nghiệp của bạn
+              <strong class="text-light-200">sống khỏe, bán được hàng</strong>
+              và khẳng định vị thế "trùm" trong ngách.
             </p>
           </div>
         </div>
       </section>
+      <section class="py-12 bg-dark-800 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/5"
+          >
+            <div>
+              <div class="text-3xl md:text-4xl font-bold text-accent mb-2">
+                5+
+              </div>
+              <div class="text-sm text-light-400">
+                Năm kinh nghiệm <br />Thực chiến dịch vụ Content SEO doanh
+                nghiệp
+              </div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-bold text-white mb-2">
+                200+
+              </div>
+              <div class="text-sm text-light-400">
+                Dự án đã triển khai <br />Thành công
+              </div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-bold text-primary-500 mb-2">
+                92%
+              </div>
+              <div class="text-sm text-light-400">
+                Tỷ lệ khách hàng <br />Gia hạn hợp đồng
+              </div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-bold text-white mb-2">
+                0
+              </div>
+              <div class="text-sm text-light-400">
+                Dự án bị phạt <br />Tác vụ thủ công
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <!-- Mission / Why We Exist -->
-      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-800">
+      <section
+        class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-800 border-t border-white/5"
+      >
         <div class="max-w-7xl mx-auto">
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <!-- Left: Why We Exist -->
+          <div class="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 class="text-3xl font-bold text-light-200 mb-6">
-                Why We Exist
+                Sự thật mất lòng
               </h2>
 
-              <p class="text-light-400 mb-6">
-                VietSEO Content was founded to solve a common problem we
-                repeatedly encountered when working with Vietnamese business
-                websites.
+              <p class="text-light-400 mb-6 text-lg leading-relaxed">
+                Nhiều doanh nghiệp Sài Gòn đang ném tiền qua cửa sổ vì tư duy
+                làm Content cũ kỹ:
+                <strong class="text-light-200"
+                  >"Viết cho có bài", "Viết cho lấp đầy website".</strong
+                >
               </p>
 
-              <p class="text-light-400 mb-6">
-                Many companies invest heavily in SEO content, yet their websites
-                struggle to generate qualified leads. Articles attract traffic
-                but fail to convert, content focuses on keywords instead of real
-                customer questions, and blogs grow in volume without building
-                trust or authority.
-              </p>
+              <div class="space-y-4 mb-8">
+                <div class="flex items-start gap-3">
+                  <i
+                    data-feather="alert-circle"
+                    class="text-red-400 w-5 h-5 mt-1"
+                  ></i>
+                  <p class="text-light-400 text-sm">
+                    Traffic ảo thì nhiều, nhưng khách gọi tư vấn thì vắng như
+                    chùa Bà Đanh.
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <i
+                    data-feather="alert-circle"
+                    class="text-red-400 w-5 h-5 mt-1"
+                  ></i>
+                  <p class="text-light-400 text-sm">
+                    Nội dung "xào nấu" lung tung, sai kiến thức chuyên môn ->
+                    Mất uy tín trầm trọng.
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <i
+                    data-feather="alert-circle"
+                    class="text-red-400 w-5 h-5 mt-1"
+                  ></i>
+                  <p class="text-light-400 text-sm">
+                    Website thành cái "kho rác" nội dung, Google nhìn vào là
+                    muốn phạt.
+                  </p>
+                </div>
+              </div>
 
-              <p class="text-light-400">
-                We exist to close that gap — helping established businesses
-                build genuine topical authority through intent-driven SEO
-                content that supports long-term growth, not short-term ranking
-                tactics.
+              <p
+                class="text-light-400 leading-relaxed border-l-4 border-accent pl-4 italic"
+              >
+                “VietSEO Content ra đời để dẹp bỏ kiểu làm ăn chộp giật đó.
+                Chúng tôi làm thật, ăn thật, ra số thật.”
               </p>
             </div>
 
-            <!-- Right: Content Philosophy -->
             <div
-              class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 shadow-xl"
+              class="bg-dark-900 p-8 rounded-2xl border border-white/5 shadow-2xl relative overflow-hidden group hover:border-accent/30 transition-all duration-300"
             >
-              <h3 class="text-xl font-bold text-light-200 mb-4">
-                Our Content Philosophy
-              </h3>
+              <div
+                class="absolute -top-10 -right-10 w-40 h-40 bg-primary-500/10 rounded-full blur-3xl group-hover:bg-primary-500/20 transition-all"
+              ></div>
 
-              <p class="text-light-400 mb-6">
-                We believe effective SEO content does not come from keyword
-                stuffing or mass production. It comes from understanding why
-                someone is searching and helping them move closer to a decision.
-              </p>
+              <h3
+                class="text-xl font-bold text-light-200 mb-6 flex items-center gap-3"
+              >
+                <i data-feather="check-square" class="text-accent"></i>
+                Nguyên tắc 3 KHÔNG - 3 CÓ
+              </h3>
 
               <ul class="space-y-4">
                 <li class="flex items-start">
                   <i
-                    data-feather="check"
-                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
+                    data-feather="x"
+                    class="text-red-400 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400">
-                    People-first content aligned with real search intent
+                    <strong>Không bôi chữ tính tiền:</strong> Viết dài mà lan
+                    man thì vứt. Ngắn gọn, súc tích, giải quyết vấn đề.
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="x"
+                    class="text-red-400 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    <strong>Không viết kiểu "trả bài":</strong> Đã nhận tiền là
+                    phải tâm huyết, viết như cho chính công ty mình.
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="x"
+                    class="text-red-400 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    <strong>Không bánh vẽ:</strong> Cam kết lộ trình rõ ràng,
+                    không hứa hẹn những thứ trên trời dưới biển.
+                  </span>
+                </li>
+                <hr class="border-white/10 my-2" />
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-primary-500 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    <strong>Có chiều sâu (In-depth):</strong> Đào sâu insight,
+                    nghiên cứu đối thủ kỹ càng.
                   </span>
                 </li>
                 <li class="flex items-start">
                   <i
                     data-feather="check"
-                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
+                    class="text-primary-500 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400">
-                    Quality over quantity — every article serves a clear purpose
-                  </span>
-                </li>
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    Long-term strategy over short-term ranking tactics
-                  </span>
-                </li>
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    Transparency in research, structure, and recommendations
-                  </span>
-                </li>
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    Ethical, sustainable SEO practices that support brand trust
+                    <strong>Có trách nhiệm:</strong> Sai thì sửa, hỏng thì đền.
+                    Làm việc sòng phẳng.
                   </span>
                 </li>
               </ul>
@@ -165,442 +256,286 @@
         </div>
       </section>
 
-      <!-- Our Experience -->
-      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-900">
+      <section class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-900">
         <div class="max-w-7xl mx-auto">
-          <div class="text-center mb-12">
+          <div class="text-center mb-16">
             <h2 class="text-3xl font-bold text-light-200 mb-4">
-              Our Experience
+              Sở trường của chúng tôi
             </h2>
             <p class="text-xl text-light-400 max-w-3xl mx-auto">
-            Practical experience across industries where content quality, accuracy, and trust directly impact business decisions.
-            Our experience comes from long-term collaboration with service-based businesses, where content is expected to support informed decision-making, build credibility, and contribute to sustainable growth -> not short-term ranking tactics or mass content output.
+              Không ôm đồm "nhạc nào cũng nhảy". Chúng tôi chỉ nhận những mảng
+              mình thực sự giỏi và có kinh nghiệm thực chiến.
             </p>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-8">
-            <!-- Construction -->
+          <div class="grid md:grid-cols-3 gap-6">
             <div
-              class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5"
+              class="p-8 rounded-2xl bg-dark-800 border border-white/5 text-center hover:-translate-y-2 transition-transform duration-300"
             >
               <div
-                class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-lg mb-6"
+                class="w-14 h-14 mx-auto bg-dark-700 rounded-full flex items-center justify-center mb-6 text-accent"
               >
-                <i data-feather="home" class="text-accent w-8 h-8"></i>
+                <i data-feather="home" class="w-7 h-7"></i>
               </div>
-              <h3 class="text-xl font-bold text-light-200 mb-3">
-                Construction
+              <h3 class="text-lg font-bold text-light-200 mb-3">
+                Xây dựng - Nội thất
               </h3>
-              <p class="text-light-400">
-                Technical SEO content for construction companies, architects,
-                and material suppliers. We focus on clear explanations and
-                trust-driven content for high-value service projects.
+              <p class="text-sm text-light-400 leading-relaxed">
+                Am hiểu từ móng đến mái. Viết đúng thuật ngữ kỹ thuật, quy trình
+                thi công, vật liệu. Giúp nhà thầu thể hiện cái "tầm" với chủ đầu
+                tư.
               </p>
             </div>
 
-            <!-- Healthcare -->
             <div
-              class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5"
+              class="p-8 rounded-2xl bg-dark-800 border border-white/5 text-center hover:-translate-y-2 transition-transform duration-300"
             >
               <div
-                class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-lg mb-6"
+                class="w-14 h-14 mx-auto bg-dark-700 rounded-full flex items-center justify-center mb-6 text-accent"
               >
-                <i data-feather="heart" class="text-accent w-8 h-8"></i>
+                <i data-feather="activity" class="w-7 h-7"></i>
               </div>
-              <h3 class="text-xl font-bold text-light-200 mb-3">Healthcare</h3>
-              <p class="text-light-400">
-                SEO content for healthcare providers where accuracy and trust
-                are critical. Our process emphasizes careful research and
-                responsible editorial review.
+              <h3 class="text-lg font-bold text-light-200 mb-3">
+                Y tế - Sức khỏe
+              </h3>
+              <p class="text-sm text-light-400 leading-relaxed">
+                Mảng này không đùa được. Viết chuẩn y khoa, có dẫn chứng nguồn
+                tin cậy (Bộ Y Tế, PubMed), tuân thủ luật quảng cáo. An toàn
+                tuyệt đối.
               </p>
             </div>
 
-            <!-- B2B Services -->
             <div
-              class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5"
+              class="p-8 rounded-2xl bg-dark-800 border border-white/5 text-center hover:-translate-y-2 transition-transform duration-300"
             >
               <div
-                class="flex items-center justify-center w-16 h-16 bg-primary-500/10 rounded-lg mb-6"
+                class="w-14 h-14 mx-auto bg-dark-700 rounded-full flex items-center justify-center mb-6 text-accent"
               >
-                <i data-feather="briefcase" class="text-accent w-8 h-8"></i>
+                <i data-feather="briefcase" class="w-7 h-7"></i>
               </div>
-              <h3 class="text-xl font-bold text-light-200 mb-3">
-                B2B Services
+              <h3 class="text-lg font-bold text-light-200 mb-3">
+                Dịch vụ B2B & Công nghệ
               </h3>
-              <p class="text-light-400">
-                Content for B2B service websites targeting decision-makers and
-                long sales cycles. We structure content to support evaluation,
-                trust-building, and lead qualification.
+              <p class="text-sm text-light-400 leading-relaxed">
+                Viết cho sếp đọc nên phải "khôn". Nội dung tập trung vào giải
+                pháp, lợi ích kinh tế (ROI) và thuyết phục người ra quyết định
+                xuống tiền.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Our Expertise & Methodology -->
-<section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-800">
-  <div class="max-w-7xl mx-auto">
-    
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-light-200 mb-4">
-        Our Expertise & Methodology
-      </h2>
-      <p class="text-xl text-light-400 max-w-3xl mx-auto">
-        A practical, business-focused approach to SEO content — designed for clarity,
-        trust, and long-term lead generation.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-8">
-
-      <!-- Card 1 -->
-      <div class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5">
-        <h3 class="text-xl font-bold text-light-200 mb-4">
-          We Write for the Right Audience
-        </h3>
-        <p class="text-light-400 mb-4">
-          Instead of writing content for search engines alone, we focus on who is actually
-          searching and what decision they are trying to make.
-        </p>
-        <p class="text-light-400">
-          This ensures your content attracts visitors who are more likely to become real
-          inquiries, not just page views.
-        </p>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5">
-        <h3 class="text-xl font-bold text-light-200 mb-4">
-          Content That Supports Business Goals
-        </h3>
-        <p class="text-light-400 mb-4">
-          Every article is created with a clear purpose — whether to educate, build trust,
-          or guide potential customers toward contacting your business.
-        </p>
-        <p class="text-light-400">
-          We structure content to support long sales cycles and high-consideration services,
-          common in B2B and professional industries.
-        </p>
-      </div>
-
-    </div>
-
-    <!-- Optional trust note -->
-    <div class="text-center mt-10 max-w-3xl mx-auto">
-      <p class="text-sm text-light-400">
-        Behind the scenes, we apply modern SEO best practices such as search intent analysis,
-        topic clustering, and editorial quality checks — without adding unnecessary complexity
-        for our clients.
-      </p>
-    </div>
-  </div>
-    <!-- Optional internal link block (kept subtle) -->
-          <div class="text-center mt-10">
-            <a
-              href="services.html"
-              class="inline-flex items-center text-accent underline hover:no-underline"
-            >
-              Explore our service approach
-              <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-            </a>
-          </div>
-        </div>
-    </section>
-
-
-        
-
-      <!-- Editorial Standards (KEEP + FIXED continuation) -->
-      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-800">
+      <section
+        class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-800 border-t border-white/5"
+      >
         <div class="max-w-7xl mx-auto">
-          <div class="text-center mb-12">
+          <div class="text-center mb-16">
             <h2 class="text-3xl font-bold text-light-200 mb-4">
-              Editorial Standards
+              Quy trình "Bao Sài" - Kiểm duyệt 4 lớp
             </h2>
             <p class="text-xl text-light-400 max-w-3xl mx-auto">
-              Our rigorous process ensures every piece meets high standards.
+              Không có chuyện viết xong ném đó. Bài viết đến tay bạn là bản hoàn
+              hảo nhất, sẵn sàng lên web kiếm khách.
             </p>
           </div>
 
           <div class="grid md:grid-cols-2 gap-12">
-            <!-- Left: Process -->
-            <div>
-              <h3 class="text-2xl font-bold text-light-200 mb-6">
-                Quality Control Process
-              </h3>
+            <div class="relative pl-8 border-l border-white/10 space-y-10">
+              <div class="relative">
+                <span
+                  class="absolute -left-[41px] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-dark-900 border-2 border-accent text-accent text-xs font-bold"
+                  >1</span
+                >
+                <h4 class="text-lg font-bold text-light-200 mb-2">
+                  Nghiên cứu & Chốt Dàn ý (Outline)
+                </h4>
+                <p class="text-light-400 text-sm">
+                  Thống nhất hướng đi ngay từ đầu. Tránh tình trạng "ông nói gà,
+                  bà nói vịt".
+                </p>
+              </div>
 
-              <div class="space-y-8">
-                <div class="flex items-start">
-                  <div class="flex-shrink-0 mr-4">
-                    <div
-                      class="flex items-center justify-center w-12 h-12 bg-primary-500/10 rounded-lg"
-                    >
-                      <span class="text-accent text-xl font-bold">1</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-bold text-light-200 mb-2">
-                      Research & Outline
-                    </h4>
-                    <p class="text-light-400">
-                      Comprehensive research and a structured outline are
-                      confirmed before writing begins.
-                    </p>
-                  </div>
-                </div>
+              <div class="relative">
+                <span
+                  class="absolute -left-[41px] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-dark-900 border-2 border-primary-500 text-primary-500 text-xs font-bold"
+                  >2</span
+                >
+                <h4 class="text-lg font-bold text-light-200 mb-2">
+                  Viết & Tối ưu hóa
+                </h4>
+                <p class="text-light-400 text-sm">
+                  Triển khai bài viết chuyên sâu, trình bày đẹp mắt, dễ đọc trên
+                  điện thoại.
+                </p>
+              </div>
 
-                <div class="flex items-start">
-                  <div class="flex-shrink-0 mr-4">
-                    <div
-                      class="flex items-center justify-center w-12 h-12 bg-primary-500/10 rounded-lg"
-                    >
-                      <span class="text-accent text-xl font-bold">2</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-bold text-light-200 mb-2">
-                      Writing & Optimization
-                    </h4>
-                    <p class="text-light-400">
-                      We write with intent alignment, clear structure, and
-                      on-page optimization (headings, readability, internal
-                      links).
-                    </p>
-                  </div>
-                </div>
+              <div class="relative">
+                <span
+                  class="absolute -left-[41px] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-dark-900 border-2 border-primary-500 text-primary-500 text-xs font-bold"
+                  >3</span
+                >
+                <h4 class="text-lg font-bold text-light-200 mb-2">
+                  Biên tập 2 Vòng (Kỹ & Khó)
+                </h4>
+                <p class="text-light-400 text-sm">
+                  Vòng 1: SEO Specialist soi lỗi kỹ thuật. Vòng 2: Editor chuyên
+                  ngành soi kiến thức và giọng văn.
+                </p>
+              </div>
 
-                <div class="flex items-start">
-                  <div class="flex-shrink-0 mr-4">
-                    <div
-                      class="flex items-center justify-center w-12 h-12 bg-primary-500/10 rounded-lg"
-                    >
-                      <span class="text-accent text-xl font-bold">3</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-bold text-light-200 mb-2">
-                      Editorial Review
-                    </h4>
-                    <p class="text-light-400">
-                      Each piece is reviewed for clarity, factual accuracy,
-                      brand tone, and search intent match before delivery.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex items-start">
-                  <div class="flex-shrink-0 mr-4">
-                    <div
-                      class="flex items-center justify-center w-12 h-12 bg-primary-500/10 rounded-lg"
-                    >
-                      <span class="text-accent text-xl font-bold">4</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-bold text-light-200 mb-2">
-                      Delivery & Revisions
-                    </h4>
-                    <p class="text-light-400">
-                      Final content is delivered with revision support to match
-                      your brief and brand voice.
-                    </p>
-                  </div>
-                </div>
+              <div class="relative">
+                <span
+                  class="absolute -left-[41px] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-dark-900 border-2 border-accent text-accent text-xs font-bold"
+                  >4</span
+                >
+                <h4 class="text-lg font-bold text-light-200 mb-2">
+                  Nghiệm thu & Bảo hành
+                </h4>
+                <p class="text-light-400 text-sm">
+                  Bàn giao file chuẩn. Hỗ trợ chỉnh sửa đến khi bạn gật đầu ưng
+                  ý mới thôi.
+                </p>
               </div>
             </div>
 
-            <!-- Right: What we check -->
             <div
-              class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 shadow-xl"
+              class="bg-dark-900 p-8 rounded-2xl border border-white/5 shadow-xl h-fit sticky top-24"
             >
-              <h3 class="text-2xl font-bold text-light-200 mb-6">
-                What We Check
+              <h3 class="text-xl font-bold text-light-200 mb-6">
+                Tiêu chuẩn bàn giao (KPI)
               </h3>
               <ul class="space-y-4">
                 <li class="flex items-start">
                   <i
                     data-feather="check-circle"
-                    class="text-accent w-5 h-5 mr-3 mt-0.5"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
-                  <span class="text-light-400"
-                    >Search intent alignment (commercial vs informational)</span
+                  <span class="text-light-400 text-sm"
+                    ><strong>Độc nhất (Unique):</strong> 100% tự viết, không
+                    copy, không xào bài. Check đạo văn kỹ càng.</span
                   >
                 </li>
                 <li class="flex items-start">
                   <i
                     data-feather="check-circle"
-                    class="text-accent w-5 h-5 mr-3 mt-0.5"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
-                  <span class="text-light-400"
-                    >Clarity, readability, and logical structure</span
+                  <span class="text-light-400 text-sm"
+                    ><strong>Đúng ý khách (Intent):</strong> Người dùng cần
+                    thông tin -> cho thông tin. Cần mua hàng -> dẫn mua
+                    hàng.</span
                   >
                 </li>
                 <li class="flex items-start">
                   <i
                     data-feather="check-circle"
-                    class="text-accent w-5 h-5 mr-3 mt-0.5"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
-                  <span class="text-light-400"
-                    >Accuracy and consistency with your services</span
+                  <span class="text-light-400 text-sm"
+                    ><strong>Trình bày đẹp:</strong> Có mục lục, in đậm ý chính,
+                    bảng biểu so sánh rõ ràng.</span
                   >
                 </li>
                 <li class="flex items-start">
                   <i
                     data-feather="check-circle"
-                    class="text-accent w-5 h-5 mr-3 mt-0.5"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
-                  <span class="text-light-400"
-                    >SEO best practices without keyword stuffing</span
+                  <span class="text-light-400 text-sm"
+                    ><strong>Người thật viết:</strong> Nếu có dùng AI hỗ trợ ý
+                    tưởng, bắt buộc phải có người biên tập lại cho mượt
+                    (Human-verified).</span
                   >
                 </li>
               </ul>
-
-              <div class="mt-8">
-                <a
-                  href="services.html"
-                  class="inline-flex items-center bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition-all duration-300"
-                >
-                  View Services
-                  <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ADDED: Acceptance Standards (EEAT Trust signal) -->
-      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-900">
-        <div class="max-w-7xl mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-light-200 mb-4">
-              Content Acceptance Standards
-            </h2>
-            <p class="text-xl text-light-400 max-w-3xl mx-auto">
-              Clear standards ensure consistency, accuracy, and business
-              alignment.
-            </p>
-          </div>
-
-          <div
-            class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 max-w-4xl mx-auto"
-          >
-            <ul class="space-y-4">
-              <li class="flex items-start">
-                <i
-                  data-feather="check-circle"
-                  class="text-accent w-5 h-5 mr-3 mt-0.5"
-                ></i>
-                <span class="text-light-400"
-                  >Original content (no duplication, no resale)</span
-                >
-              </li>
-              <li class="flex items-start">
-                <i
-                  data-feather="check-circle"
-                  class="text-accent w-5 h-5 mr-3 mt-0.5"
-                ></i>
-                <span class="text-light-400"
-                  >Intent match (answers what the searcher actually wants)</span
-                >
-              </li>
-              <li class="flex items-start">
-                <i
-                  data-feather="check-circle"
-                  class="text-accent w-5 h-5 mr-3 mt-0.5"
-                ></i>
-                <span class="text-light-400"
-                  >Readable structure (H2–H3 hierarchy, scannable layout)</span
-                >
-              </li>
-              <li class="flex items-start">
-                <i
-                  data-feather="check-circle"
-                  class="text-accent w-5 h-5 mr-3 mt-0.5"
-                ></i>
-                <span class="text-light-400"
-                  >No keyword stuffing or misleading claims</span
-                >
-              </li>
-            </ul>
-
-            <div class="mt-8 text-sm text-light-400">
-              If AI is used at any stage, it is reviewed and verified by a human
-              editor before delivery.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ADDED: Human Responsibility (EEAT: real people) -->
-      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-800">
+      <section class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-900">
         <div class="max-w-7xl mx-auto">
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 class="text-3xl font-bold text-light-200 mb-6">
-                The People Behind the Content
+                Rõ người - Rõ việc - Rõ trách nhiệm
               </h2>
               <p class="text-light-400 mb-4">
-                Every deliverable has clear ownership. We believe accountability
-                is essential for trust and accuracy.
+                Sợ nhất làm việc với Agency mà không biết ai đang nắm dự án của
+                mình. Tại VietSEO Content, mọi thứ đều minh bạch.
               </p>
               <p class="text-light-400">
-                The content lead is responsible for strategy, editorial
-                standards, and final approval before delivery.
+                Mỗi dự án sẽ có một
+                <strong>Chủ trì (Project Owner)</strong> đứng mũi chịu sào. Có
+                vấn đề gì cứ "nắm đầu" người này, đảm bảo được giải quyết trong
+                một nốt nhạc.
               </p>
             </div>
 
             <div
-              class="bg-gradient-to-br from-dark-700 to-dark-800 p-8 rounded-xl border border-white/5 shadow-xl"
+              class="bg-dark-800 p-8 rounded-2xl border border-white/5 shadow-xl hover:border-primary-500/50 transition-all"
             >
-              <h3 class="text-xl font-bold text-light-200 mb-2">
-                Content Strategist / SEO Content Lead
-              </h3>
-              <p class="text-light-400 mb-4">
-                Responsible for content direction, quality control, and EEAT
-                compliance.
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center text-white font-bold text-xl"
+                >
+                  L
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-light-200">Content Lead</h3>
+                  <p class="text-xs text-accent uppercase tracking-wider">
+                    Người chịu trách nhiệm chính
+                  </p>
+                </div>
+              </div>
+              <p class="text-light-400 mb-4 text-sm leading-relaxed">
+                Chịu trách nhiệm lên chiến lược, duyệt bài cuối cùng và báo cáo
+                số liệu hàng tháng với doanh nghiệp. Cam kết không "đem con bỏ
+                chợ".
               </p>
-              <!-- If you don't have author page yet, keep as placeholder -->
               <a
-                href="author.html"
-                class="text-accent underline hover:no-underline"
+                href="contact.html"
+                class="text-sm text-accent hover:text-white transition-colors flex items-center gap-1"
               >
-                View author profile →
+                Liên hệ trao đổi ngay
+                <i data-feather="arrow-right" class="w-3 h-3"></i>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ADDED: Transparency + Soft CTA -->
-      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-900">
-        <div class="max-w-4xl mx-auto text-center">
+      <section
+        class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-dark-900 to-primary-900/20 relative overflow-hidden"
+      >
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-accent/10 blur-[100px] rounded-full pointer-events-none"
+        ></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
           <h2 class="text-3xl font-bold text-light-200 mb-6">
-            Transparency & Responsibility
+            Đừng để Website "đóng băng" nữa!
           </h2>
-          <p class="text-light-400 mb-8">
-            We commit to ethical content practices, confidentiality, and
-            transparent collaboration.
+          <p class="text-light-400 mb-10 text-lg">
+            Khách hàng đang tìm kiếm bạn trên Google mỗi ngày. Đừng để họ rơi
+            vào tay đối thủ chỉ vì nội dung của bạn quá chán.
           </p>
-
           <div class="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="services.html"
-              class="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-8 py-3 rounded-lg shadow transition"
+              href="contact.html"
+              class="bg-primary-500 hover:bg-primary-600 text-white font-bold px-10 py-4 rounded-xl shadow-lg transition-all hover:scale-105 shadow-primary-500/20"
             >
-              View SEO Content Services
+              Chat Zalo tư vấn (Miễn phí)
             </a>
             <a
-              href="contact.html"
-              class="border border-accent/50 hover:bg-accent/10 text-accent font-semibold px-8 py-3 rounded-lg transition"
+              href="services.html"
+              class="border border-white/10 hover:bg-white/5 text-light-300 font-semibold px-10 py-4 rounded-xl transition-all"
             >
-              Contact Us
+              Xem Dịch vụ & Báo giá
             </a>
           </div>
-
-          <p class="text-sm text-light-400 mt-6">
-            For fast consultation and pricing in Vietnam, Zalo is typically the
-            quickest channel.
+          <p class="text-sm text-light-400 mt-8 opacity-60">
+            *Phản hồi nhanh trong 30 phút giờ hành chính. Làm việc cả Thứ 7.
           </p>
         </div>
       </section>
@@ -608,11 +543,9 @@
 
     <custom-footer></custom-footer>
 
-    <!-- Load components AFTER DOM -->
-    <script src="header.js"></script>
-    <script src="footer.js"></script>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
     <script src="script.js"></script>
-
     <script>
       if (window.feather) feather.replace();
     </script>
