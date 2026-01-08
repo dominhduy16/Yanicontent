@@ -254,17 +254,24 @@
           <button class="filter-btn" data-filter="trend">Xu hướng</button>
 
           <!-- Theo ngành: đổi giọng thành thư viện (không nói "trang dịch vụ") -->
-          <div class="relative ml-auto">
-            <button
-              id="industryBtn"
-              class="filter-btn flex items-center gap-2"
-              type="button"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Thư viện theo ngành
-              <i data-feather="chevron-down" class="w-4 h-4"></i>
-            </button>
+          <button
+  id="industryBtn"
+  type="button"
+  aria-haspopup="true"
+  aria-expanded="false"
+  class="relative flex items-center gap-2 px-4 py-2 rounded-full
+         border border-accent/40
+         text-accent font-semibold
+         bg-accent/10
+         hover:bg-accent/20
+         transition-all"
+>
+  <i data-feather="layers" class="w-4 h-4"></i>
+  Thư viện theo ngành
+  <span class="text-xs text-accent/70 ml-1">(Theo lĩnh vực)</span>
+  <i data-feather="chevron-down" class="w-4 h-4"></i>
+</button>
+
 
             <div
               id="industryMenu"
