@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dịch vụ Viết bài SEO Authority | Yani Content Masters</title>
+
+    <!-- PRIMARY KEYWORD: Dịch vụ viết content chuẩn SEO -->
+    <title>
+      Dịch vụ viết content chuẩn SEO cho doanh nghiệp B2B/SME | Yani Content
+    </title>
     <meta
       name="description"
-      content="Dịch vụ SEO Content chuyên sâu cho doanh nghiệp B2B. Chiến lược nội dung bền vững, tăng trưởng Traffic thật và tỷ lệ chuyển đổi tại thị trường Việt Nam."
+      content="Dịch vụ viết content chuẩn SEO cho doanh nghiệp B2B/SME tại TP.HCM: xây cụm chủ đề, bài trụ cột, tối ưu ý định tìm kiếm và chuyển đổi. Triển khai theo tháng, có hợp đồng & hóa đơn VAT."
     />
+
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+
     <script>
       tailwind.config = {
         theme: {
@@ -31,7 +37,7 @@
                 100: "#F5F7F6",
                 200: "#E6F4EE",
                 300: "#C7D7D1",
-                400: "#9CAFA7" /* Đã fix màu sáng hơn cho dễ đọc */,
+                400: "#9CAFA7",
               },
               accent: "#5EE0B6",
             },
@@ -39,18 +45,37 @@
         },
       };
     </script>
+
     <style>
       html {
         scroll-behavior: smooth;
       }
     </style>
+
+    <!-- Key Entity (tổ chức) - không dùng tiếng Anh -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Yani Content",
+        "url": "https://dominhduy16.github.io/Yanicontent/",
+        "email": "contact@Yanicontent.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "TP. Hồ Chí Minh",
+          "addressCountry": "VN"
+        }
+      }
+    </script>
   </head>
+
   <body class="bg-dark-900 text-light-300 font-sans antialiased">
     <custom-header></custom-header>
 
     <main>
+      <!-- HERO -->
       <section
-        class="relative bg-dark-900 pt-36 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+        class="relative bg-dark-900 pt-36 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
       >
         <div
           class="absolute inset-0 opacity-20"
@@ -61,57 +86,292 @@
 
         <div class="max-w-7xl mx-auto relative z-10">
           <div class="text-center">
-            <!-- Badge -->
+            <!-- Badge: NLP TP.HCM -->
             <div
               class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-500/10 border border-primary-500/20 text-accent text-xs font-bold uppercase tracking-widest mb-6"
             >
               <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-              Viết Content SEO cho Doanh nghiệp • Tập trung nhu cầu khách hàng
+              Dịch vụ viết content chuẩn SEO • Cho doanh nghiệp TP.HCM
             </div>
 
-            <!-- H1 -->
+            <!-- H1: PRIMARY -->
             <h1
               class="text-4xl md:text-5xl lg:text-6xl font-bold text-light-200 mb-6 leading-tight"
             >
-              Viết Content SEO cho Website Doanh nghiệp <br />
+              Dịch vụ viết content chuẩn SEO<br />
               <span
                 class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary-500"
               >
-                Chuyên sâu, đúng nhu cầu người dùng tìm kiếm
+                Đúng Intent, tăng khách tiềm năng
               </span>
             </h1>
 
-            <!-- Subheadline -->
+            <!-- Subheadline: entity + semantic, không tiếng Anh -->
             <p
               class="text-xl md:text-2xl text-light-400 max-w-3xl mx-auto font-light leading-relaxed"
             >
-              Chúng tôi không gia công “bài viết”. Chúng tôi xây dựng
+              Chúng tôi không “viết cho đủ số bài”. Yani xây
               <strong class="text-light-200"
                 >hệ thống nội dung có cấu trúc</strong
               >
-              giúp website tiếp cận đúng đối tượng khách hàng tìm năng, tạo lead
-              ổn định và hỗ trợ tăng trưởng SEO theo lộ trình 6–12 tháng.
+              theo hành trình khách hàng: chọn đúng chủ đề, viết đúng vấn đề,
+              tăng niềm tin và dẫn người đọc đến bước liên hệ. Phù hợp doanh
+              nghiệp B2B/SME ở TP.HCM cần tăng trưởng bền vững trong lộ trình
+              6–12 tháng.
             </p>
 
-            <!-- CTA -->
+            <!-- CTA: sửa #contact (không tồn tại) -->
             <div class="mt-10 flex justify-center gap-4 flex-wrap">
               <a
                 href="#packages"
                 class="bg-primary-500 hover:bg-primary-600 text-white font-bold px-8 py-3 rounded-xl transition-all hover:-translate-y-1 shadow-lg shadow-primary-500/20"
               >
-                Xem gói dịch vụ phù hợp
+                Xem gói triển khai theo tháng
               </a>
               <a
-                href="#contact"
+                href="contact.html"
                 class="border border-white/10 text-light-200 font-semibold px-8 py-3 rounded-xl hover:bg-white/5 transition"
               >
-                Chat Zalo tư vấn nhanh
+                Nhắn Zalo để nhận báo giá
+              </a>
+            </div>
+
+            <!-- Micro-proof (NLP doanh nghiệp TP.HCM) -->
+            <p class="mt-6 text-sm text-light-400 opacity-80">
+              Có duyệt dàn ý trước khi viết • Biên tập 2 vòng • Có hợp đồng &
+              hóa đơn VAT
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1) PACKAGES: đưa lên sớm để tăng chuyển đổi (đề xuất đảo block) -->
+      <section
+        id="packages"
+        class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-800 border-t border-white/5"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <!-- SECONDARY: gói viết content SEO theo tháng -->
+            <h2 class="text-3xl font-bold text-light-200 mb-4">
+              Gói viết content SEO theo tháng cho doanh nghiệp
+            </h2>
+            <p class="text-xl text-light-400 max-w-3xl mx-auto">
+              Thiết kế theo <strong>độ cạnh tranh ngành</strong>,
+              <strong>nguồn lực đội marketing</strong> và mục tiêu tăng trưởng
+              6–12 tháng. Trọng tâm là <em>cụm chủ đề</em>,
+              <em>bài trụ cột</em> và liên kết nội bộ để tăng hiệu quả tìm kiếm
+              & chuyển đổi.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8 items-start">
+            <!-- STARTER -->
+            <div
+              class="bg-dark-900 p-8 rounded-2xl border border-white/5 hover:border-light-400 transition-all duration-300"
+            >
+              <h3 class="text-xl font-bold text-light-200 mb-2">
+                Gói Khởi động
+              </h3>
+              <p class="text-light-400 text-sm mb-3">
+                Phù hợp doanh nghiệp mới làm SEO hoặc website chưa có nền nội
+                dung rõ ràng.
+              </p>
+              <p class="text-xs text-light-400 mb-6">
+                Duyệt dàn ý trước khi viết • Biên tập 2 vòng • Báo cáo theo
+                tháng
+              </p>
+
+              <div class="text-3xl font-bold text-light-100 mb-2">Liên hệ</div>
+              <p class="text-sm text-light-400 mb-6">
+                (Ngân sách phổ biến tại TP.HCM: 10–15 triệu/tháng)
+              </p>
+
+              <ul class="space-y-3 mb-8 text-sm">
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    2–4 bài nền tảng (bài trụ cột hoặc bài giới thiệu dịch vụ)
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    Nghiên cứu từ khóa theo ý định tìm kiếm & giai đoạn ra quyết
+                    định
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    Viết & đăng bài chuẩn SEO lên website (tối ưu đọc dễ, rõ ý)
+                  </span>
+                </li>
+              </ul>
+
+              <a
+                href="contact.html"
+                class="block w-full text-center bg-dark-800 hover:bg-dark-700 text-light-200 font-semibold px-6 py-3 rounded-lg border border-white/10 transition-all"
+              >
+                Nhắn Zalo tư vấn gói phù hợp
+              </a>
+            </div>
+
+            <!-- GROWTH -->
+            <div
+              class="bg-gradient-to-b from-primary-900/30 to-dark-900 p-8 rounded-2xl border border-accent/50 relative shadow-2xl transform md:-translate-y-4"
+            >
+              <div
+                class="absolute top-0 right-0 bg-accent text-dark-900 px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-bl-lg rounded-tr-lg"
+              >
+                Phổ biến nhất
+              </div>
+
+              <h3 class="text-xl font-bold text-light-200 mb-2">
+                Gói Tăng trưởng
+              </h3>
+              <p class="text-light-400 text-sm mb-3">
+                Dành cho doanh nghiệp đã làm SEO, cần mở rộng cụm chủ đề và tăng
+                uy tín theo ngành.
+              </p>
+              <p class="text-xs text-light-300 mb-6">
+                Duyệt dàn ý trước khi viết • Biên tập 2 vòng • Có định hướng nội
+                dung theo dữ liệu
+              </p>
+
+              <div class="text-3xl font-bold text-accent mb-2">Liên hệ</div>
+              <p class="text-sm text-light-300 mb-6">
+                (Ngân sách phổ biến tại TP.HCM: 15–20+ triệu/tháng)
+              </p>
+
+              <ul class="space-y-3 mb-8 text-sm">
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-accent w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-200 font-medium"
+                    >5–10 bài chuyên sâu / tháng</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-accent w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    Lập kế hoạch cụm chủ đề & liên kết nội bộ theo hành trình
+                    khách hàng
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-accent w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    Làm mới nội dung cũ định kỳ để giữ thứ hạng và tăng chuyển
+                    đổi
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-accent w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    Phân tích khoảng trống nội dung & đề xuất chủ đề ưu tiên
+                  </span>
+                </li>
+              </ul>
+
+              <a
+                href="contact.html"
+                class="block w-full text-center bg-accent hover:bg-white text-dark-900 font-bold px-6 py-3 rounded-lg shadow-lg shadow-accent/20 transition-all"
+              >
+                Nhận đề xuất triển khai
+              </a>
+            </div>
+
+            <!-- LEADER -->
+            <div
+              class="bg-dark-900 p-8 rounded-2xl border border-white/5 hover:border-light-400 transition-all duration-300"
+            >
+              <h3 class="text-xl font-bold text-light-200 mb-2">Gói Dẫn đầu</h3>
+              <p class="text-light-400 text-sm mb-3">
+                Cho ngành cạnh tranh cao: Y tế, Bất động sản, Luật, Tài chính.
+              </p>
+              <p class="text-xs text-light-400 mb-6">
+                Kiểm duyệt chuyên môn • Chuẩn tin cậy cao • Quản lý tiến độ rõ
+                ràng
+              </p>
+
+              <div class="text-3xl font-bold text-light-100 mb-2">Liên hệ</div>
+              <p class="text-sm text-light-400 mb-6">
+                (Triển khai theo dự án / quy mô lớn)
+              </p>
+
+              <ul class="space-y-3 mb-8 text-sm">
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400"
+                    >10–15+ bài chuyên sâu / tháng</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    Nội dung chuẩn tin cậy cao, trích nguồn khi cần, hạn chế rủi
+                    ro sai lệch
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400"
+                    >Có người phụ trách nội dung & SEO riêng</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check"
+                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400">
+                    Báo cáo hiệu suất & định hướng tối ưu hàng tháng
+                  </span>
+                </li>
+              </ul>
+
+              <a
+                href="contact.html"
+                class="block w-full text-center bg-dark-800 hover:bg-dark-700 text-light-200 font-semibold px-6 py-3 rounded-lg border border-white/10 transition-all"
+              >
+                Nhận đề xuất triển khai
               </a>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- 2) PAIN POINTS -->
       <section
         class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-800 border-t border-white/5"
       >
@@ -122,16 +382,15 @@
               <span class="text-red-400">khó tạo hiệu quả?</span>
             </h2>
             <p class="text-xl text-light-400 max-w-3xl mx-auto">
-              Nhiều doanh nghiệp đầu tư viết bài đều đặn nhưng
+              Nhiều doanh nghiệp đầu tư đều đặn nhưng
               <strong
-                >traffic không đúng, người đọc không ở lại và không tạo
-                lead</strong
+                >lượng truy cập không đúng, người đọc không ở lại và không phát
+                sinh liên hệ</strong
               >. Dưới đây là những nguyên nhân phổ biến.
             </p>
           </div>
 
           <div class="grid md:grid-cols-3 gap-8">
-            <!-- CARD 1 -->
             <div
               class="bg-dark-900 p-8 rounded-2xl border border-white/5 hover:border-red-500/30 transition-all duration-300 group"
             >
@@ -144,13 +403,12 @@
                 Nội dung thiên về từ khóa
               </h3>
               <p class="text-light-400 text-sm leading-relaxed">
-                Bài viết được tối ưu máy móc, tập trung quá nhiều vào từ khóa
-                nhưng thiếu giá trị thực cho người đọc. Kết quả là thời gian ở
-                lại thấp và khó duy trì thứ hạng ổn định.
+                Tối ưu máy móc, tập trung từ khóa nhưng thiếu giá trị thực. Kết
+                quả là thời gian ở lại thấp, khó giữ thứ hạng ổn định và khó
+                chuyển đổi.
               </p>
             </div>
 
-            <!-- CARD 2 -->
             <div
               class="bg-dark-900 p-8 rounded-2xl border border-white/5 hover:border-red-500/30 transition-all duration-300 group"
             >
@@ -166,13 +424,12 @@
                 Thiếu chiều sâu chuyên môn
               </h3>
               <p class="text-light-400 text-sm leading-relaxed">
-                Nội dung chỉ dừng ở mức mô tả chung, thiếu ví dụ, phân tích hoặc
-                góc nhìn thực tế. Điều này khiến website khó thể hiện được năng
-                lực chuyên môn, đặc biệt với doanh nghiệp B2B.
+                Nội dung mô tả chung, thiếu ví dụ và phân tích theo bối cảnh.
+                Website khó thể hiện năng lực, đặc biệt với doanh nghiệp B2B có
+                chu kỳ ra quyết định dài.
               </p>
             </div>
 
-            <!-- CARD 3 -->
             <div
               class="bg-dark-900 p-8 rounded-2xl border border-white/5 hover:border-red-500/30 transition-all duration-300 group"
             >
@@ -185,31 +442,35 @@
                 Thiếu định hướng nội dung
               </h3>
               <p class="text-light-400 text-sm leading-relaxed">
-                Viết bài rời rạc, không có cấu trúc chủ đề rõ ràng khiến website
-                khó xây dựng độ tin cậy theo ngành và không hỗ trợ tốt cho SEO
-                dài hạn.
+                Viết rời rạc, không có cụm chủ đề và liên kết nội bộ rõ ràng
+                khiến website khó xây “uy tín theo ngành” và không hỗ trợ tốt
+                cho SEO dài hạn.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- 3) METHOD: keyword chính + semantic, không tiếng Anh -->
       <section class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-900">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-16">
             <span
               class="text-accent font-bold tracking-widest uppercase text-xs"
             >
-              Phương pháp triển khai
+              Cách chúng tôi triển khai
             </span>
+
+            <!-- PRIMARY trong H2 -->
             <h2 class="text-3xl font-bold text-light-200 mt-2 mb-4">
-              Dịch vụ viết bài chuẩn SEO <br class="hidden sm:block" />
-              bám sát Ý định tìm kiếm (Intent-Driven)
+              Dịch vụ viết content chuẩn SEO <br class="hidden sm:block" />
+              bám sát ý định tìm kiếm (tập trung chuyển đổi)
             </h2>
+
             <p class="text-xl text-light-400 max-w-3xl mx-auto">
               Nội dung được xây dựng để thỏa mãn cả hai:
-              <strong>Google (kỹ thuật & cấu trúc)</strong> và
-              <strong>khách hàng (giá trị & ra quyết định)</strong>.
+              <strong>công cụ tìm kiếm (cấu trúc, kỹ thuật)</strong> và
+              <strong>khách hàng (giá trị, ra quyết định)</strong>.
             </p>
           </div>
 
@@ -225,14 +486,15 @@
                   </div>
                   <div>
                     <h3 class="text-xl font-bold text-light-200 mb-2">
-                      Phân tích Insight đa tầng theo từ khóa
+                      Phân tích nhu cầu tìm kiếm theo từng giai đoạn
                     </h3>
                     <p class="text-light-400 text-sm">
                       Trong <strong>dịch vụ viết content chuẩn SEO</strong>,
-                      chúng tôi không chọn chủ đề theo cảm tính. Mỗi từ khóa đều
-                      được phân tích để hiểu người tìm kiếm đang
-                      <em>muốn biết gì</em>, <em>so sánh điều gì</em> và
-                      <em>đang ở giai đoạn nào trong hành trình mua</em>.
+                      chúng tôi không chọn chủ đề theo cảm tính. Mỗi từ khóa
+                      được phân tích để hiểu người tìm kiếm đang muốn gì:
+                      <em>tìm hiểu</em>, <em>so sánh</em>, hay
+                      <em>cần báo giá</em> — từ đó chọn góc viết và cấu trúc phù
+                      hợp.
                     </p>
                   </div>
                 </div>
@@ -247,13 +509,15 @@
                   </div>
                   <div>
                     <h3 class="text-xl font-bold text-light-200 mb-2">
-                      Văn phong chuyên gia – đúng ngành, đúng người đọc
+                      Văn phong chuyên nghiệp – đúng ngành, đúng người ra quyết
+                      định
                     </h3>
                     <p class="text-light-400 text-sm">
-                      Bài viết được thực hiện bởi
-                      <strong>Niche Writer</strong> am hiểu ngành, sử dụng thuật
-                      ngữ chính xác và tư duy phù hợp với người ra quyết định
-                      (Marketing Manager, SEO Lead, C-level).
+                      Bài viết được triển khai theo ngôn ngữ doanh nghiệp: rõ
+                      ràng, có dẫn chứng khi cần, phù hợp với người đọc như
+                      <strong>trưởng phòng marketing</strong>,
+                      <strong>phụ trách SEO</strong> và
+                      <strong>ban lãnh đạo</strong>.
                     </p>
                   </div>
                 </div>
@@ -268,20 +532,21 @@
                   </div>
                   <div>
                     <h3 class="text-xl font-bold text-light-200 mb-2">
-                      Cấu trúc Silo & Topic Cluster dài hạn
+                      Cụm chủ đề & bài trụ cột cho tăng trưởng dài hạn
                     </h3>
                     <p class="text-light-400 text-sm">
-                      Nội dung được tổ chức theo Pillar & Cluster, kết hợp
-                      <strong>internal link ngữ nghĩa</strong>
-                      để vừa hỗ trợ SEO, vừa dẫn dắt người đọc đi sâu vào phễu
-                      chuyển đổi.
+                      Nội dung được tổ chức theo <strong>bài trụ cột</strong> và
+                      <strong>cụm bài liên quan</strong>, kết hợp
+                      <strong>liên kết nội bộ theo ngữ nghĩa</strong> để vừa
+                      tăng hiệu quả tìm kiếm, vừa dẫn dắt người đọc đi sâu và
+                      tăng tỷ lệ liên hệ.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- RIGHT -->
+            <!-- RIGHT: SECONDARY "dịch vụ viết bài SEO" -->
             <div
               class="bg-dark-800 p-8 rounded-2xl border border-white/5 shadow-2xl relative overflow-hidden"
             >
@@ -300,8 +565,8 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Độ dài linh hoạt <strong>1.500 – 3.000+ từ</strong>
-                    (tùy độ cạnh tranh & độ sâu chủ đề)
+                    Độ dài linh hoạt <strong>1.500 – 3.000+ từ</strong> (tùy độ
+                    cạnh tranh & độ sâu chủ đề)
                   </span>
                 </li>
                 <li class="flex items-start">
@@ -310,7 +575,8 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Nghiên cứu từ khóa chính, từ khóa phụ & semantic keywords
+                    Nghiên cứu từ khóa chính, từ khóa liên quan và ngữ cảnh tìm
+                    kiếm
                   </span>
                 </li>
                 <li class="flex items-start">
@@ -319,7 +585,7 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Tối ưu cấu trúc Heading (H1 – H2 – H3) chuẩn SEO
+                    Tối ưu cấu trúc tiêu đề (H1 – H2 – H3) rõ ý, dễ đọc
                   </span>
                 </li>
                 <li class="flex items-start">
@@ -328,7 +594,8 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Chiến lược internal link ngữ nghĩa theo Topic Cluster
+                    Liên kết nội bộ theo cụm chủ đề để tăng độ bao phủ và điều
+                    hướng người đọc
                   </span>
                 </li>
                 <li class="flex items-start">
@@ -337,8 +604,8 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Biên tập <strong>2 vòng</strong>: Specialist SEO & Editor
-                    ngành
+                    Biên tập <strong>2 vòng</strong>: kiểm tra SEO & rà soát nội
+                    dung theo ngành
                   </span>
                 </li>
                 <li class="flex items-start">
@@ -347,223 +614,26 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Tối ưu trải nghiệm đọc (UX): Table, Bullet points, Quote
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="packages"
-        class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-800 border-t border-white/5"
-      >
-        <div class="max-w-7xl mx-auto">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-light-200 mb-4">
-              Gói dịch vụ viết bài chuẩn SEO theo tháng
-            </h2>
-            <p class="text-xl text-light-400 max-w-3xl mx-auto">
-              Các gói content được thiết kế theo
-              <strong>mức độ cạnh tranh ngành</strong>,
-              <strong>nguồn lực team marketing</strong> và
-              <strong>mục tiêu tăng trưởng SEO trong 6–12 tháng</strong>.
-            </p>
-          </div>
-
-          <div class="grid md:grid-cols-3 gap-8 items-start">
-            <!-- STARTER -->
-            <div
-              class="bg-dark-900 p-8 rounded-2xl border border-white/5 hover:border-light-400 transition-all duration-300"
-            >
-              <h3 class="text-xl font-bold text-light-200 mb-2">
-                Gói Khởi động
-              </h3>
-              <p class="text-light-400 text-sm mb-6">
-                Phù hợp với doanh nghiệp mới triển khai SEO hoặc website chưa có
-                nền nội dung rõ ràng.
-              </p>
-
-              <div class="text-3xl font-bold text-light-100 mb-2">Liên hệ</div>
-              <p class="text-sm text-light-500 mb-6">
-                (Ngân sách phổ biến: 10–15 triệu/tháng)
-              </p>
-
-              <ul class="space-y-3 mb-8 text-sm">
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    2–4 bài viết nền tảng (Pillar hoặc bài dịch vụ)
-                  </span>
-                </li>
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    Nghiên cứu từ khóa theo Search Intent
-                  </span>
-                </li>
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    Viết & đăng bài chuẩn SEO lên website
+                    Tối ưu trải nghiệm đọc: mục lục, gạch đầu dòng, bảng so sánh
+                    khi cần
                   </span>
                 </li>
               </ul>
 
-              <a
-                href="contact.html"
-                class="block w-full text-center bg-dark-800 hover:bg-dark-700 text-light-200 font-semibold px-6 py-3 rounded-lg border border-white/10 transition-all"
-              >
-                Chat Zalo tư vấn gói phù hợp
-              </a>
-            </div>
-
-            <!-- GROWTH -->
-            <div
-              class="bg-gradient-to-b from-primary-900/30 to-dark-900 p-8 rounded-2xl border border-accent/50 relative shadow-2xl transform md:-translate-y-4"
-            >
-              <div
-                class="absolute top-0 right-0 bg-accent text-dark-900 px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-bl-lg rounded-tr-lg"
-              >
-                Phổ biến nhất
+              <div class="mt-8 pt-6 border-t border-white/10">
+                <a
+                  href="contact.html"
+                  class="inline-flex items-center justify-center w-full bg-dark-900 hover:bg-dark-700 text-light-200 font-semibold px-6 py-3 rounded-lg border border-white/10 transition-all"
+                >
+                  Nhận đề xuất nội dung theo ngành
+                </a>
               </div>
-
-              <h3 class="text-xl font-bold text-light-200 mb-2">
-                Gói Tăng trưởng
-              </h3>
-              <p class="text-light-400 text-sm mb-6">
-                Dành cho doanh nghiệp đã làm SEO, cần mở rộng Topic Cluster và
-                tăng Authority theo ngành.
-              </p>
-
-              <div class="text-3xl font-bold text-accent mb-2">Liên hệ</div>
-              <p class="text-sm text-light-300 mb-6">
-                (Ngân sách phổ biến: 15–20+ triệu/tháng)
-              </p>
-
-              <ul class="space-y-3 mb-8 text-sm">
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-accent w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-200 font-medium">
-                    5–10 bài viết chuyên sâu / tháng
-                  </span>
-                </li>
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-accent w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    Lên kế hoạch Topic Cluster & Internal Link
-                  </span>
-                </li>
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-accent w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    Audit & tối ưu lại nội dung cũ định kỳ
-                  </span>
-                </li>
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-accent w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    Tư vấn Content Gap & hướng triển khai tiếp theo
-                  </span>
-                </li>
-              </ul>
-
-              <a
-                href="contact.html"
-                class="block w-full text-center bg-accent hover:bg-white text-dark-900 font-bold px-6 py-3 rounded-lg shadow-lg shadow-accent/20 transition-all"
-              >
-                Nhận đề xuất triển khai
-              </a>
-            </div>
-
-            <!-- LEADER -->
-            <div
-              class="bg-dark-900 p-8 rounded-2xl border border-white/5 hover:border-light-400 transition-all duration-300"
-            >
-              <h3 class="text-xl font-bold text-light-200 mb-2">Gói Dẫn đầu</h3>
-              <p class="text-light-400 text-sm mb-6">
-                Giải pháp content chuyên sâu cho ngành cạnh tranh cao: Y tế,
-                BĐS, Luật, Tài chính.
-              </p>
-
-              <div class="text-3xl font-bold text-light-100 mb-2">Liên hệ</div>
-              <p class="text-sm text-light-500 mb-6">
-                (Triển khai theo dự án / quy mô lớn)
-              </p>
-
-              <ul class="space-y-3 mb-8 text-sm">
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    10–15+ bài viết chuyên sâu / tháng
-                  </span>
-                </li>
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    Nội dung chuẩn EEAT & kiểm duyệt chuyên môn
-                  </span>
-                </li>
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    Content Lead & SEO Specialist phụ trách riêng
-                  </span>
-                </li>
-                <li class="flex items-start">
-                  <i
-                    data-feather="check"
-                    class="text-primary-500 w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
-                  ></i>
-                  <span class="text-light-400">
-                    Báo cáo hiệu suất & định hướng hàng tháng
-                  </span>
-                </li>
-              </ul>
-
-              <a
-                href="contact.html"
-                class="block w-full text-center bg-dark-800 hover:bg-dark-700 text-light-200 font-semibold px-6 py-3 rounded-lg border border-white/10 transition-all"
-              >
-                Nhận đề xuất triển khai
-              </a>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- 4) WHY YANI (entity + trust) -->
       <section
         class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-900 border-t border-white/5"
       >
@@ -574,9 +644,10 @@
               <span class="text-accent">Yani Content</span>?
             </h2>
             <p class="text-xl text-light-400 max-w-3xl mx-auto">
-              Không chỉ là khác biệt về cách viết, mà là khác biệt về
+              Khác biệt không nằm ở “viết hay”, mà nằm ở
               <strong>tư duy triển khai, kiểm soát rủi ro</strong> và
-              <strong>khả năng tạo giá trị dài hạn cho SEO</strong>.
+              <strong>khả năng tạo giá trị dài hạn</strong> cho website doanh
+              nghiệp B2B/SME tại TP.HCM.
             </p>
           </div>
 
@@ -601,7 +672,6 @@
               </thead>
 
               <tbody class="text-light-300 text-sm md:text-base">
-                <!-- ROW 1 -->
                 <tr>
                   <td class="p-6 border-b border-white/5 font-semibold">
                     Người trực tiếp thực hiện
@@ -614,20 +684,20 @@
                         data-feather="check-circle"
                         class="text-accent w-4 h-4"
                       ></i>
-                      Writer am hiểu ngành & có người chịu trách nhiệm nội dung
+                      Có người phụ trách nội dung theo ngành, chịu trách nhiệm
+                      chất lượng
                     </div>
                   </td>
                   <td
                     class="p-6 border-b border-white/5 bg-dark-800 text-light-400"
                   >
-                    Người viết tổng hợp, ít hiểu bối cảnh ngành
+                    Viết tổng hợp, khó đảm bảo đúng bối cảnh ngành
                   </td>
                 </tr>
 
-                <!-- ROW 2 -->
                 <tr>
                   <td class="p-6 border-b border-white/5 font-semibold">
-                    Phân tích ý định tìm kiếm
+                    Bám sát nhu cầu tìm kiếm
                   </td>
                   <td
                     class="p-6 border-b border-white/5 bg-primary-900/10 text-light-100 font-medium"
@@ -637,7 +707,7 @@
                         data-feather="check-circle"
                         class="text-accent w-4 h-4"
                       ></i>
-                      Search Intent + Hành trình khách hàng B2B
+                      Phân tích ý định tìm kiếm theo hành trình khách hàng B2B
                     </div>
                   </td>
                   <td
@@ -647,7 +717,6 @@
                   </td>
                 </tr>
 
-                <!-- ROW 3 -->
                 <tr>
                   <td class="p-6 border-b border-white/5 font-semibold">
                     Quy trình kiểm soát chất lượng
@@ -660,7 +729,7 @@
                         data-feather="check-circle"
                         class="text-accent w-4 h-4"
                       ></i>
-                      Biên tập 2 vòng: SEO Specialist & Editor ngành
+                      Duyệt dàn ý trước khi viết + biên tập 2 vòng
                     </div>
                   </td>
                   <td
@@ -670,7 +739,6 @@
                   </td>
                 </tr>
 
-                <!-- ROW 4 -->
                 <tr>
                   <td class="p-6 border-b border-white/5 font-semibold">
                     Trách nhiệm & pháp lý
@@ -689,7 +757,7 @@
                   <td
                     class="p-6 border-b border-white/5 bg-dark-800 text-light-400"
                   >
-                    Thỏa thuận đơn lẻ, khó kiểm soát rủi ro
+                    Thỏa thuận rời rạc, khó kiểm soát rủi ro
                   </td>
                 </tr>
               </tbody>
@@ -697,16 +765,262 @@
           </div>
         </div>
       </section>
+      <!-- TESTIMONIALS (Blog) -->
+      <section
+        class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-900 border-t border-white/5"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-14">
+            <h2 class="text-3xl font-bold text-light-200 mb-4">
+              Khách hàng nói gì về nội dung của Yani?
+            </h2>
+            <p class="text-xl text-light-400 max-w-3xl mx-auto">
+              Một vài phản hồi giả định (mô phỏng) từ doanh nghiệp đang triển
+              khai nội dung theo lộ trình dài hạn.
+            </p>
+          </div>
 
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- REVIEW 1 -->
+            <div
+              class="bg-dark-800 p-8 rounded-2xl border border-white/5 hover:border-accent/30 transition-all"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-500/10 border border-primary-500/20 flex items-center justify-center flex-shrink-0"
+                >
+                  <i data-feather="user" class="text-accent w-5 h-5"></i>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center justify-between gap-4">
+                    <div>
+                      <p class="text-light-200 font-bold">Anh Minh T.</p>
+                      <p class="text-light-400 text-sm">
+                        Trưởng phòng Marketing • Doanh nghiệp B2B (TP.HCM)
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-1 text-accent">
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                    </div>
+                  </div>
+
+                  <p class="mt-5 text-light-300 leading-relaxed">
+                    “Điểm mình thích là làm rất rõ
+                    <strong class="text-light-200">dàn ý</strong> và hướng triển
+                    khai trước khi viết. Nội dung không lan man, bám đúng vấn đề
+                    khách hàng hay hỏi, nên đội sales dùng lại được để tư vấn.
+                    Sau vài tuần, thời gian đọc và lượt liên hệ tăng thấy rõ.”
+                  </p>
+
+                  <div class="mt-6 flex flex-wrap gap-2">
+                    <span
+                      class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-light-300"
+                      >Duyệt dàn ý</span
+                    >
+                    <span
+                      class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-light-300"
+                      >Tăng liên hệ</span
+                    >
+                    <span
+                      class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-light-300"
+                      >B2B</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- REVIEW 2 -->
+            <div
+              class="bg-dark-800 p-8 rounded-2xl border border-white/5 hover:border-accent/30 transition-all"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-500/10 border border-primary-500/20 flex items-center justify-center flex-shrink-0"
+                >
+                  <i data-feather="user" class="text-accent w-5 h-5"></i>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center justify-between gap-4">
+                    <div>
+                      <p class="text-light-200 font-bold">Chị Hương N.</p>
+                      <p class="text-light-400 text-sm">
+                        Quản lý Website • Ngành Nội thất (TP.HCM)
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-1 text-accent">
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                    </div>
+                  </div>
+
+                  <p class="mt-5 text-light-300 leading-relaxed">
+                    “Trước đây bài nhiều nhưng đọc không ra ‘gu’ thương hiệu.
+                    Bên Yani làm lại cấu trúc bài, thêm phần so sánh/FAQ đúng
+                    kiểu khách hay hỏi. Nội dung nhìn
+                    <strong class="text-light-200">chuyên nghiệp</strong> hơn
+                    hẳn, website cũng dễ đọc và giữ người dùng lâu hơn.”
+                  </p>
+
+                  <div class="mt-6 flex flex-wrap gap-2">
+                    <span
+                      class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-light-300"
+                      >Cấu trúc bài</span
+                    >
+                    <span
+                      class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-light-300"
+                      >FAQ</span
+                    >
+                    <span
+                      class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-light-300"
+                      >Thương hiệu</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- REVIEW 3 -->
+            <div
+              class="bg-dark-800 p-8 rounded-2xl border border-white/5 hover:border-accent/30 transition-all"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-500/10 border border-primary-500/20 flex items-center justify-center flex-shrink-0"
+                >
+                  <i data-feather="user" class="text-accent w-5 h-5"></i>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center justify-between gap-4">
+                    <div>
+                      <p class="text-light-200 font-bold">Anh Quang D.</p>
+                      <p class="text-light-400 text-sm">
+                        Chủ doanh nghiệp • Dịch vụ B2B (TP.HCM)
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-1 text-accent">
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                    </div>
+                  </div>
+
+                  <p class="mt-5 text-light-300 leading-relaxed">
+                    “Mình không rành SEO, nhưng bên Yani giải thích rất rõ: bài
+                    nào phục vụ tìm hiểu, bài nào phục vụ so sánh, bài nào dẫn
+                    tới liên hệ. Nhờ vậy triển khai theo lộ trình, không viết
+                    theo cảm tính. Phần báo cáo cũng dễ hiểu, tập trung vào
+                    <strong class="text-light-200">khách tiềm năng</strong>.”
+                  </p>
+
+                  <div class="mt-6 flex flex-wrap gap-2">
+                    <span
+                      class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-light-300"
+                      >Lộ trình</span
+                    >
+                    <span
+                      class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-light-300"
+                      >Báo cáo</span
+                    >
+                    <span
+                      class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-light-300"
+                      >Chuyển đổi</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- REVIEW 4 -->
+            <div
+              class="bg-dark-800 p-8 rounded-2xl border border-white/5 hover:border-accent/30 transition-all"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-500/10 border border-primary-500/20 flex items-center justify-center flex-shrink-0"
+                >
+                  <i data-feather="user" class="text-accent w-5 h-5"></i>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center justify-between gap-4">
+                    <div>
+                      <p class="text-light-200 font-bold">Chị Linh P.</p>
+                      <p class="text-light-400 text-sm">
+                        Trưởng nhóm Nội dung • Ngành Giáo dục (TP.HCM)
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-1 text-accent">
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                      <i data-feather="star" class="w-4 h-4"></i>
+                    </div>
+                  </div>
+
+                  <p class="mt-5 text-light-300 leading-relaxed">
+                    “Bài viết có điểm cộng là
+                    <strong class="text-light-200">dễ đọc</strong>, có mục lục,
+                    gạch ý rõ, ví dụ sát thực tế. Nhờ cách trình bày đó, người
+                    đọc ở lại lâu hơn và tỷ lệ chuyển từ đọc sang để lại thông
+                    tin tốt hơn. Team mình cũng học được cách làm khung nội dung
+                    để tự triển khai về sau.”
+                  </p>
+
+                  <div class="mt-6 flex flex-wrap gap-2">
+                    <span
+                      class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-light-300"
+                      >Dễ đọc</span
+                    >
+                    <span
+                      class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-light-300"
+                      >Tăng đăng ký</span
+                    >
+                    <span
+                      class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-light-300"
+                      >Quy trình</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="text-center mt-12">
+            <a
+              href="contact.html"
+              class="inline-flex items-center justify-center bg-primary-500 hover:bg-primary-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-primary-500/20 transition-all duration-300 hover:-translate-y-1"
+            >
+              Nhận tư vấn nội dung phù hợp
+            </a>
+            <p class="mt-4 text-sm text-light-400 opacity-70">
+              *Các đánh giá trên là nội dung giả định để minh họa cách trình bày
+              phản hồi.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5) FAQ: chuẩn hóa ngôn ngữ, bỏ "không giới hạn" gây rủi ro -->
       <section class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-800">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-light-200 mb-4">
-              Thắc mắc thường gặp (FAQ)
+              Thắc mắc thường gặp
             </h2>
             <p class="text-xl text-light-400">
-              Những điều khách hàng B2B thường băn khoăn khi hợp tác với chúng
-              tôi.
+              Những điều doanh nghiệp ở TP.HCM thường hỏi trước khi hợp tác
+              triển khai content SEO.
             </p>
           </div>
 
@@ -721,14 +1035,13 @@
                   data-feather="help-circle"
                   class="text-accent w-6 h-6 flex-shrink-0"
                 ></i>
-                Bên bạn có am hiểu ngành hẹp của tôi (VD: Hóa chất, Cơ khí)
-                không?
+                Bên bạn có am hiểu ngành hẹp (ví dụ: hóa chất, cơ khí) không?
               </h3>
               <p class="text-light-400 text-sm leading-relaxed pl-9">
-                Có. Quy trình của chúng tôi bắt đầu bằng việc nghiên cứu sâu
-                (Deep Dive) về sản phẩm của bạn. Ngoài ra, chúng tôi sở hữu mạng
-                lưới CTV là các chuyên gia/kỹ sư trong nhiều lĩnh vực kỹ thuật
-                để tham vấn nội dung (SME Interview).
+                Có. Chúng tôi bắt đầu bằng nghiên cứu sản phẩm/dịch vụ, cách
+                khách hàng tìm kiếm và cách đối thủ đang triển khai. Khi cần,
+                chúng tôi tham vấn chuyên môn để rà soát thuật ngữ và dữ liệu
+                trước khi bàn giao.
               </p>
             </div>
 
@@ -742,12 +1055,12 @@
                   data-feather="help-circle"
                   class="text-accent w-6 h-6 flex-shrink-0"
                 ></i>
-                Tôi có được duyệt dàn ý (Outline) trước khi viết không?
+                Tôi có được duyệt dàn ý trước khi viết không?
               </h3>
               <p class="text-light-400 text-sm leading-relaxed pl-9">
-                Chắc chắn. Đây là bước bắt buộc. Chúng tôi chỉ tiến hành viết
-                bài khi bạn đã đồng ý 100% với dàn ý chi tiết (Heading, Angle,
-                Key message) để đảm bảo bài viết đi đúng hướng mong muốn.
+                Có. Đây là bước bắt buộc. Chúng tôi chỉ viết khi bạn đã duyệt
+                dàn ý chi tiết (cấu trúc mục, góc triển khai, thông điệp chính)
+                để đảm bảo bài viết đúng hướng và đúng nhu cầu người đọc.
               </p>
             </div>
 
@@ -761,18 +1074,21 @@
                   data-feather="help-circle"
                   class="text-accent w-6 h-6 flex-shrink-0"
                 ></i>
-                Chính sách bảo hành và chỉnh sửa như thế nào?
+                Chính sách chỉnh sửa và bảo hành như thế nào?
               </h3>
               <p class="text-light-400 text-sm leading-relaxed pl-9">
-                Chúng tôi cam kết chỉnh sửa không giới hạn số lần cho đến khi
-                đạt yêu cầu theo dàn ý đã chốt. Nếu bài viết sai lệch thông tin
-                kỹ thuật nghiêm trọng, chúng tôi sẽ viết lại mới hoàn toàn.
+                Chúng tôi chỉnh sửa theo dàn ý và yêu cầu đã chốt đến khi đạt
+                yêu cầu. Nếu phát sinh thay đổi lớn ngoài phạm vi dàn ý/yêu cầu
+                ban đầu, hai bên sẽ thống nhất lại trước khi triển khai. Trường
+                hợp sai lệch thông tin kỹ thuật nghiêm trọng, chúng tôi viết lại
+                mới hoàn toàn.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- 6) QUALITY: semantic + entity, không tiếng Anh -->
       <section class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-900">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
@@ -780,15 +1096,14 @@
               Cam kết chất lượng nội dung
             </h2>
             <p class="text-xl text-light-400 max-w-3xl mx-auto">
-              Mỗi bài viết đều được kiểm soát chặt chẽ về
+              Mỗi bài viết được kiểm soát chặt về
               <strong>chuyên môn, độ chính xác</strong> và
-              <strong>hiệu quả SEO</strong> nhằm bảo vệ uy tín thương hiệu của
+              <strong>hiệu quả tìm kiếm</strong> để bảo vệ uy tín thương hiệu
               doanh nghiệp.
             </p>
           </div>
 
           <div class="grid md:grid-cols-2 gap-8">
-            <!-- EDITORIAL -->
             <div
               class="bg-dark-800 p-8 rounded-2xl border border-white/5 shadow-xl"
             >
@@ -805,8 +1120,9 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Nội dung được nghiên cứu độc lập, dựa trên insight thực tế
-                    (<strong>không copy – không xào lại</strong>)
+                    Nội dung nghiên cứu độc lập, bám vấn đề thật (<strong
+                      >không sao chép – không xào lại</strong
+                    >)
                   </span>
                 </li>
                 <li class="flex items-start">
@@ -815,8 +1131,8 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Trích dẫn nguồn uy tín khi cần thiết (cơ quan quản lý, báo
-                    chính thống, tài liệu chuyên ngành)
+                    Trích dẫn nguồn uy tín khi cần (cơ quan quản lý, tài liệu
+                    chuyên ngành, báo chính thống)
                   </span>
                 </li>
                 <li class="flex items-start">
@@ -825,8 +1141,8 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Văn phong rõ ràng, mạch lạc, phù hợp với người ra quyết định
-                    trong môi trường doanh nghiệp (B2B)
+                    Văn phong rõ ràng, mạch lạc, phù hợp môi trường doanh nghiệp
+                    B2B (tập trung ra quyết định)
                   </span>
                 </li>
                 <li class="flex items-start">
@@ -835,14 +1151,23 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Kiểm tra chính tả, thuật ngữ và dữ liệu trước khi bàn giao
-                    để hạn chế tối đa sai sót
+                    Rà soát thuật ngữ và dữ liệu trước khi bàn giao để hạn chế
+                    tối đa sai sót
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    data-feather="check-circle"
+                    class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
+                  ></i>
+                  <span class="text-light-400 text-sm">
+                    Với nội dung nhạy cảm, ưu tiên nguồn tham chiếu chính thống
+                    và kiểm tra thông tin kỹ hơn
                   </span>
                 </li>
               </ul>
             </div>
 
-            <!-- TECH SEO -->
             <div
               class="bg-dark-800 p-8 rounded-2xl border border-white/5 shadow-xl"
             >
@@ -859,8 +1184,7 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Tối ưu từ khóa theo ngữ cảnh, đảm bảo mật độ tự nhiên và
-                    trải nghiệm đọc
+                    Tối ưu từ khóa theo ngữ cảnh, đảm bảo tự nhiên và dễ đọc
                   </span>
                 </li>
                 <li class="flex items-start">
@@ -869,8 +1193,8 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Nội dung đáp ứng đúng search intent (tìm hiểu, so sánh hoặc
-                    hỗ trợ ra quyết định)
+                    Nội dung đáp ứng đúng ý định tìm kiếm: tìm hiểu, so sánh
+                    hoặc ra quyết định liên hệ
                   </span>
                 </li>
                 <li class="flex items-start">
@@ -879,8 +1203,8 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Tối ưu cấu trúc SEO Onpage: Heading, Meta, Alt text, Schema
-                    khi cần thiết
+                    Tối ưu cấu trúc trang: tiêu đề mục, mô tả, hình ảnh và dữ
+                    liệu hỗ trợ khi cần
                   </span>
                 </li>
                 <li class="flex items-start">
@@ -889,8 +1213,8 @@
                     class="text-accent w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
                   ></i>
                   <span class="text-light-400 text-sm">
-                    Nội dung hiển thị tốt trên thiết bị di động, đảm bảo trải
-                    nghiệm người dùng đa nền tảng
+                    Hiển thị tốt trên di động, ưu tiên trải nghiệm đọc và tốc độ
+                    tải trang
                   </span>
                 </li>
               </ul>
@@ -899,6 +1223,7 @@
         </div>
       </section>
 
+      <!-- FINAL CTA -->
       <section
         class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-dark-900 to-primary-900/20 relative overflow-hidden"
       >
@@ -907,13 +1232,14 @@
         ></div>
         <div class="max-w-4xl mx-auto text-center relative z-10">
           <h2 class="text-3xl md:text-5xl font-bold text-light-200 mb-6">
-            Sẵn sàng nâng hiệu quả Content SEO?
+            Sẵn sàng tăng hiệu quả content SEO cho doanh nghiệp?
           </h2>
           <p class="text-xl text-light-400 mb-10">
-            Chat Zalo để nhận
-            <strong class="text-light-200">đề xuất triển khai 1 trang</strong>:
-            Topic Cluster phù hợp ngành, 5–10 bài nên ưu tiên và gợi ý tối ưu
-            chuyển đổi cho website của doanh nghiệp bạn.
+            Nhắn Zalo để nhận
+            <strong class="text-light-200"
+              >đề xuất triển khai mẫu cho website</strong
+            >: gợi ý cụm chủ đề theo ngành, 5–10 bài nên ưu tiên và đề xuất tối
+            ưu chuyển đổi để tăng liên hệ.
           </p>
 
           <div class="flex flex-col sm:flex-row justify-center gap-4">
@@ -921,18 +1247,18 @@
               href="contact.html"
               class="bg-primary-500 hover:bg-primary-600 text-white font-bold px-10 py-4 rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
             >
-              Chat Zalo nhận tư vấn
+              Nhắn Zalo nhận tư vấn
             </a>
             <a
               href="#packages"
               class="border border-white/10 hover:bg-white/5 text-light-300 font-semibold px-10 py-4 rounded-xl transition-all duration-300"
             >
-              Xem gói dịch vụ
+              Xem gói theo tháng
             </a>
           </div>
 
           <p class="mt-6 text-sm text-light-400 opacity-60">
-            *Phản hồi trong giờ hành chính (thường trong 30 phút).
+            *Phản hồi trong giờ hành chính.
           </p>
         </div>
       </section>
@@ -948,4 +1274,3 @@
     </script>
   </body>
 </html>
-
