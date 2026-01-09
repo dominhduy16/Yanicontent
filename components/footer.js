@@ -164,7 +164,7 @@ class CustomFooter extends HTMLElement {
                     <h3>Kết nối ngay</h3>
                     <p><i data-feather="mail"></i> yanicontent@gmail.com</p>
                     <p><i data-feather="phone"></i> 0902.623.078 (Zalo)</p>
-                    <p><i data-feather="map-pin"></i> Tòa nhà Innovation, Hà Nội, VN</p>
+                    <p><i data-feather="map-pin"></i> Thành phố Hồ Chí Minh </p>
                     
                     <div class="legal-info">
                         MST: 0123456789 <br>
@@ -193,4 +193,5 @@ class CustomFooter extends HTMLElement {
 }
 
 customElements.define("custom-footer", CustomFooter);
+
 
