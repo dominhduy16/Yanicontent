@@ -130,6 +130,7 @@ class CustomHeader extends HTMLElement {
                 <nav class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="services.html">Services</a>
+                    <a href="pricing.html">Bảng Giá</a>
                     <a href="blog.html">Blog</a>
                     <a href="about.html">About</a>
                     <a href="contact.html">Contact</a>
@@ -144,9 +145,9 @@ class CustomHeader extends HTMLElement {
                 <div class="mobile-menu-links">
                     <a href="index.html">Home</a>
                     <a href="services.html">Services</a>
+                    <a href="pricing.html">Bảng Giá</a>
                     <a href="blog.html">Blog</a>
                     <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
                 </div>
             </div>
         `;
