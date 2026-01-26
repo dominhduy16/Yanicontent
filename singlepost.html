@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+  <header
+    class="fixed top-0 left-0 right-0 z-50 bg-dark-900/95 backdrop-blur border-b border-white/5"
+  >
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-bold text-white">
+        Yani<span class="text-accent">Content</span>
+      </a>
+
+      <!-- MENU: hiện từ sm trở lên -->
+      <nav class="hidden sm:flex items-center gap-8 text-light-200 text-sm">
+        <a href="index.html" class="hover:text-accent transition">Home</a>
+        <a href="services.html" class="hover:text-accent transition"
+          >Services</a
+        >
+        <a href="pricing.html" class="hover:text-accent transition">Bảng Giá</a>
+        <a href="blog.html" class="hover:text-accent transition">Blog</a>
+        <a href="singlepost.html" class="hover:text-accent transition"
+          >singlepost</a
+        >
+        <a href="about.html" class="hover:text-accent transition">About</a>
+        <a href="contact.html" class="hover:text-accent transition">Contact</a>
+      </nav>
+
+      <!-- MOBILE BUTTON: chỉ hiện khi < sm -->
+      <button
+        id="menuBtn"
+        class="sm:hidden text-light-200 hover:text-accent transition"
+        aria-label="Open menu"
+      >
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div
+      id="mobileMenu"
+      class="sm:hidden hidden border-t border-white/5 bg-dark-900"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-3 text-light-200"
+      >
+        <a href="index.html" class="hover:text-accent">Home</a>
+        <a href="services.html" class="hover:text-accent">Services</a>
+        <a href="pricing.html" class="hover:text-accent">Bảng Giá</a>
+        <a href="blog.html" class="hover:text-accent">Blog</a>
+        <a href="singlepost.html" class="hover:text-accent transition"
+          >singlepost</a
+        >
+        <a href="about.html" class="hover:text-accent">About</a>
+        <a href="contact.html" class="hover:text-accent">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- spacer tránh bị che -->
+  <div class="h-16"></div>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      How to Write Blog Posts That Readers Care About in the Age of AI
+    </title>
+
+    <!-- SEO BASIC -->
+    <meta
+      name="description"
+      content="Hướng dẫn viết blog khiến người đọc thực sự quan tâm trong thời đại AI: từ phát triển ý tưởng, tìm góc tiếp cận đến tối ưu nội dung chuẩn SEO & EEAT."
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2F8F5B",
+              accent: "#5EE0B6",
+              dark: { 900: "#0B1F17", 800: "#0F2A20" },
+              light: { 100: "#F5F7F6", 200: "#7A968B" },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom Global Styles -->
+    <style>
+      body {
+        font-family:
+          "Inter",
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-dark-900 text-light-100">
+    <!-- MAIN -->
+    <main
+      class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-16"
+    >
+      <!-- SIDEBAR -->
+      <aside class="sticky top-24 h-fit space-y-10">
+        <!-- TOC -->
+        <div class="bg-dark-800 p-6 rounded-2xl border border-white/10">
+          <p class="font-semibold mb-4">Table of Contents</p>
+          <ul id="toc" class="space-y-2 text-light-200 text-sm"></ul>
+        </div>
+
+        <!-- SHARE -->
+        <div class="bg-dark-800 p-6 rounded-2xl border border-white/10">
+          <p class="font-semibold mb-4">Share this post:</p>
+          <div class="flex gap-4 text-light-200">
+            <a href="#" class="hover:text-accent">in</a>
+            <a href="#" class="hover:text-accent">X</a>
+            <a href="#" class="hover:text-accent">f</a>
+            <a href="#" class="hover:text-accent">🔗</a>
+          </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="bg-[#E6DBFF] text-black p-6 rounded-2xl">
+          <h4 class="font-bold text-lg mb-2">
+            Join the pack. Get YaniContent updates.
+          </h4>
+          <p class="text-sm mb-4">
+            Subscribe to our newsletter for the latest updates and insights.
+          </p>
+
+          <form class="space-y-3">
+            <input
+              type="email"
+              placeholder="Email address"
+              class="w-full px-4 py-2 rounded-lg border border-black/20 outline-none"
+            />
+            <button
+              class="w-full bg-primary text-white py-2 rounded-lg font-semibold flex justify-center items-center gap-2"
+            >
+              Subscribe for Updates
+              <i data-feather="mail"></i>
+            </button>
+          </form>
+        </div>
+      </aside>
+
+      <!-- ARTICLE -->
+      <article>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+          How to Write Blog Posts That Readers Care About in the Age of AI
+        </h1>
+
+        <div class="flex gap-4 mb-10 text-sm">
+          <span class="text-accent font-medium">Janny Anh</span>
+          <span class="text-light-200">•</span>
+          <span class="text-light-200">13 min read</span>
+          <span class="text-light-200">•</span>
+          <span class="text-light-200">Dec 1st, 2025</span>
+        </div>
+
+        <img
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+          class="rounded-2xl mb-12 w-full object-cover"
+        />
+
+        <section
+          class="prose max-w-3xl bg-white text-slate-900 p-12 rounded-3xl"
+        >
+          >
+          <h2>Step 1: Develop Your Idea</h2>
+          <p>
+            Great blog posts start with a clear idea that solves a real problem.
+          </p>
+          <ul>
+            <li>Who is this for?</li>
+            <li>What pain does it solve?</li>
+            <li>Why now?</li>
+          </ul>
+
+          <h2>Step 2: Find Your Angle</h2>
+          <p>Your angle is what makes your post different.</p>
+          <h2>Step 3: Find Your Angle</h2>
+          <p>Your angle is what makes your post different.</p>
+          <h2>Step 4: Find Your Angle</h2>
+          <p>Your angle is what makes your post different.</p>
+          <h2>Step 5: Find Your Angle</h2>
+          <p>Your angle is what makes your post different.</p>
+          <h2>Step 6: Find Your Angle</h2>
+          <p>Your angle is what makes your post different.</p>
+          <h2>Step 7: Find Your Angle</h2>
+          <p>Your angle is what makes your post different.</p>
+        </section>
+
+        <!-- CTA -->
+        <!-- RELATED POSTS -->
+        <div class="mt-24">
+          <h3 class="text-2xl font-bold mb-8">
+            Bài viết liên quan cùng chủ đề
+          </h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Item 1 -->
+            <article
+              class="bg-dark-800 rounded-2xl overflow-hidden border border-white/10 hover:-translate-y-1 transition"
+            >
+              <a href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+                  class="h-40 w-full object-cover"
+                />
+              </a>
+
+              <div class="p-5">
+                <span class="text-xs text-accent">Content Strategy</span>
+
+                <h4 class="mt-2 font-semibold leading-snug">
+                  <a href="#" class="hover:text-accent">
+                    Hướng dẫn Content SEO toàn diện cho doanh nghiệp
+                  </a>
+                </h4>
+              </div>
+            </article>
+
+            <!-- Item 2 -->
+            <article
+              class="bg-dark-800 rounded-2xl overflow-hidden border border-white/10 hover:-translate-y-1 transition"
+            >
+              <a href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+                  class="h-40 w-full object-cover"
+                />
+              </a>
+
+              <div class="p-5">
+                <span class="text-xs text-accent">EEAT</span>
+
+                <h4 class="mt-2 font-semibold leading-snug">
+                  <a href="#" class="hover:text-accent">
+                    Checklist viết bài chuẩn EEAT cho website
+                  </a>
+                </h4>
+              </div>
+            </article>
+
+            <!-- Item 3 -->
+            <article
+              class="bg-dark-800 rounded-2xl overflow-hidden border border-white/10 hover:-translate-y-1 transition"
+            >
+              <a href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692"
+                  class="h-40 w-full object-cover"
+                />
+              </a>
+
+              <div class="p-5">
+                <span class="text-xs text-accent">On-page SEO</span>
+
+                <h4 class="mt-2 font-semibold leading-snug">
+                  <a href="#" class="hover:text-accent">
+                    Cách tối ưu Onpage giúp tăng chuyển đổi
+                  </a>
+                </h4>
+              </div>
+            </article>
+
+            <!-- Item 4 -->
+            <article
+              class="bg-dark-800 rounded-2xl overflow-hidden border border-white/10 hover:-translate-y-1 transition"
+            >
+              <a href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+                  class="h-40 w-full object-cover"
+                />
+              </a>
+
+              <div class="p-5">
+                <span class="text-xs text-accent">Keyword Research</span>
+
+                <h4 class="mt-2 font-semibold leading-snug">
+                  <a href="#" class="hover:text-accent">
+                    Nghiên cứu từ khóa theo Search Intent
+                  </a>
+                </h4>
+              </div>
+            </article>
+
+            <!-- Item 5 -->
+            <article
+              class="bg-dark-800 rounded-2xl overflow-hidden border border-white/10 hover:-translate-y-1 transition"
+            >
+              <a href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+                  class="h-40 w-full object-cover"
+                />
+              </a>
+
+              <div class="p-5">
+                <span class="text-xs text-accent">Content Funnel</span>
+
+                <h4 class="mt-2 font-semibold leading-snug">
+                  <a href="#" class="hover:text-accent">
+                    Xây Content Funnel cho B2B
+                  </a>
+                </h4>
+              </div>
+            </article>
+
+            <!-- Item 6 -->
+            <article
+              class="bg-dark-800 rounded-2xl overflow-hidden border border-white/10 hover:-translate-y-1 transition"
+            >
+              <a href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                  class="h-40 w-full object-cover"
+                />
+              </a>
+
+              <div class="p-5">
+                <span class="text-xs text-accent">Audit</span>
+
+                <h4 class="mt-2 font-semibold leading-snug">
+                  <a href="#" class="hover:text-accent">
+                    Content Audit: Quy trình tối ưu lại bài cũ
+                  </a>
+                </h4>
+              </div>
+            </article>
+
+            <!-- Item 7 -->
+            <article
+              class="bg-dark-800 rounded-2xl overflow-hidden border border-white/10 hover:-translate-y-1 transition"
+            >
+              <a href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984"
+                  class="h-40 w-full object-cover"
+                />
+              </a>
+
+              <div class="p-5">
+                <span class="text-xs text-accent">Topic Cluster</span>
+
+                <h4 class="mt-2 font-semibold leading-snug">
+                  <a href="#" class="hover:text-accent">
+                    Xây Topic Cluster tăng Authority
+                  </a>
+                </h4>
+              </div>
+            </article>
+
+            <!-- Item 8 -->
+            <article
+              class="bg-dark-800 rounded-2xl overflow-hidden border border-white/10 hover:-translate-y-1 transition"
+            >
+              <a href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
+                  class="h-40 w-full object-cover"
+                />
+              </a>
+
+              <div class="p-5">
+                <span class="text-xs text-accent">SEO Writing</span>
+
+                <h4 class="mt-2 font-semibold leading-snug">
+                  <a href="#" class="hover:text-accent">
+                    Cách viết bài SEO cho người ra quyết định
+                  </a>
+                </h4>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div
+          class="mt-24 rounded-3xl bg-dark-800 border border-white/10 p-10 text-center"
+        >
+          <h3 class="text-2xl font-bold mb-3">Nhận Audit Nội Dung Miễn Phí</h3>
+
+          <p class="text-light-200 mb-6">
+            Đánh giá nhanh cấu trúc content, EEAT và cơ hội tăng traffic cho
+            website của bạn.
+          </p>
+
+          <a
+            href="contact.html"
+            class="inline-block bg-accent text-dark-900 font-bold px-8 py-4 rounded-xl hover:bg-white transition"
+          >
+            Gửi website để Audit
+          </a>
+        </div>
+      </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/5 mt-32">
+      <div class="max-w-7xl mx-auto px-6 py-10 text-center text-light-200">
+        © 2026 YaniContent
+      </div>
+    </footer>
+
+    <!-- TOC SCRIPT -->
+    <script>
+      const toc = document.getElementById("toc");
+      document.querySelectorAll("article h2").forEach((h, i) => {
+        const id = "sec" + i;
+        h.id = id;
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = "#" + id;
+        a.textContent = h.textContent;
+        a.className = "hover:text-accent block";
+        li.appendChild(a);
+        toc.appendChild(li);
+      });
+      feather.replace();
+    </script>
+  </body>
+  <footer class="bg-dark-900 border-t border-white/5 mt-32">
+    <div
+      class="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
+    >
+      <!-- COL 1 -->
+      <div>
+        <a href="/" class="text-xl font-bold text-white">
+          Yani<span class="text-accent">Content</span>
+        </a>
+
+        <p class="text-light-200 mt-4 leading-relaxed text-sm">
+          Yani Content là đơn vị tiên phong trong giải pháp nội dung chuẩn EEAT.
+          Chúng tôi giúp doanh nghiệp B2B xây dựng vị thế chuyên gia (Authority)
+          thông qua chiến lược nội dung bền vững.
+        </p>
+
+        <div class="flex gap-4 mt-6 opacity-60">
+          <img
+            src="https://www.dmca.com/img/dmca-badge-w200-5x1-01.png"
+            class="h-8"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg"
+            class="h-8"
+          />
+        </div>
+      </div>
+
+      <!-- COL 2 -->
+      <div>
+        <h4
+          class="text-white font-semibold mb-4 uppercase tracking-wider text-sm"
+        >
+          Dịch vụ mũi nhọn
+        </h4>
+
+        <ul class="space-y-3 text-light-200 text-sm">
+          <li>
+            <a href="#" class="hover:text-accent">Content SEO Chiến lược</a>
+          </li>
+          <li><a href="#" class="hover:text-accent">Viết bài chuẩn EEAT</a></li>
+          <li>
+            <a href="#" class="hover:text-accent">Audit & Tối ưu nội dung</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-accent">Content Marketing B2B</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- COL 3 -->
+      <div>
+        <h4
+          class="text-white font-semibold mb-4 uppercase tracking-wider text-sm"
+        >
+          Về chúng tôi
+        </h4>
+
+        <ul class="space-y-3 text-light-200 text-sm">
+          <li><a href="#" class="hover:text-accent">Triết lý nội dung</a></li>
+          <li><a href="#" class="hover:text-accent">Thư viện tri thức</a></li>
+          <li><a href="#" class="hover:text-accent">Yêu cầu báo giá</a></li>
+          <li><a href="#" class="hover:text-accent">Chính sách bảo mật</a></li>
+        </ul>
+      </div>
+
+      <!-- COL 4 -->
+      <div>
+        <h4
+          class="text-white font-semibold mb-4 uppercase tracking-wider text-sm"
+        >
+          Kết nối ngay
+        </h4>
+
+        <ul class="space-y-3 text-light-200 text-sm">
+          <li>yanicontent@gmail.com</li>
+          <li>0902.623.078 (Zalo)</li>
+          <li>TP. Hồ Chí Minh</li>
+        </ul>
+
+        <p class="text-xs text-light-200 mt-6 opacity-60">
+          MST: 0123456789<br />
+          Giấy phép số: 123/GP-BTTTT cấp bởi Bộ Thông tin và Truyền thông.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="border-t border-white/5 py-6 text-center text-light-200 text-sm"
+    >
+      © 2026 Yani Content Master. All rights reserved.
+    </div>
+  </footer>
+</html>
