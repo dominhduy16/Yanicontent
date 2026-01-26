@@ -132,6 +132,7 @@ class CustomHeader extends HTMLElement {
                     <a href="services.html">Services</a>
                     <a href="pricing.html">Bảng Giá</a>
                     <a href="blog.html">Blog</a>
+                    <a href="singlepost.html">Singlepost</a>
                     <a href="about.html">About</a>
                     <a href="contact.html">Contact</a>
                 </nav>
@@ -147,6 +148,7 @@ class CustomHeader extends HTMLElement {
                     <a href="services.html">Services</a>
                     <a href="pricing.html">Bảng Giá</a>
                     <a href="blog.html">Blog</a>
+                    <a href="singlepost.html">Singlepost</a>
                     <a href="about.html">About</a>
                 </div>
             </div>
