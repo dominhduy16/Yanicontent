@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đề Xuất Chiến Lược Nội Dung | Yani Content</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: { 500: "#2F8F5B", 600: "#3FBF8C", 700: "#1E6640" },
+              dark: { 900: "#0B1F17", 800: "#0F2A20", 700: "#163629" },
+              light: {
+                100: "#F5F7F6",
+                200: "#E6F4EE",
+                300: "#C7D7D1",
+                400: "#9CAFA7",
+              },
+              accent: "#5EE0B6",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #0b1f17;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      /* Lớp nền trang trí sử dụng ảnh Group 446.png */
+      .bg-decoration {
+        position: absolute;
+        z-index: -1;
+        opacity: 0.25;
+        pointer-events: none;
+        width: 800px;
+        height: auto;
+      }
+
+      .bg-pos-1 {
+        top: 0;
+        right: -200px;
+        transform: rotate(15deg);
+      }
+      .bg-pos-2 {
+        top: 20%;
+        left: -300px;
+        transform: rotate(180deg);
+      }
+      .bg-pos-3 {
+        top: 50%;
+        right: -250px;
+        transform: rotate(90deg);
+      }
+      .bg-pos-4 {
+        bottom: 0;
+        left: -100px;
+        transform: rotate(-45deg);
+      }
+
+      .glass-card {
+        background: rgba(15, 42, 32, 0.7);
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(94, 224, 182, 0.1);
+        border-radius: 20px;
+        padding: 35px;
+        margin-bottom: 40px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      }
+
+      .input-line {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.03);
+        border: none;
+        border-bottom: 1.5px solid #1e6640;
+        color: #5ee0b6;
+        padding: 10px 14px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        margin-top: 8px;
+        border-radius: 4px;
+      }
+      .input-line:focus {
+        outline: none;
+        background: rgba(94, 224, 182, 0.05);
+        border-bottom-color: #5ee0b6;
+        box-shadow: 0 4px 15px rgba(94, 224, 182, 0.1);
+      }
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 28px;
+        border-left: 4px solid #5ee0b6;
+        padding-left: 18px;
+      }
+
+      @media print {
+        .bg-decoration {
+          display: none;
+        }
+        .glass-card {
+          background: #fff !important;
+          color: #000 !important;
+          border: 1px solid #ddd !important;
+          box-shadow: none !important;
+        }
+        .input-line {
+          border-bottom: 1px solid #000 !important;
+          color: #000 !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="text-light-300 font-sans antialiased">
+    <img src="Group 446.png" class="bg-decoration bg-pos-1" alt="bg" />
+    <img src="Group 446.png" class="bg-decoration bg-pos-2" alt="bg" />
+    <img src="Group 446.png" class="bg-decoration bg-pos-3" alt="bg" />
+    <img src="Group 446.png" class="bg-decoration bg-pos-4" alt="bg" />
+
+    <main class="max-w-4xl mx-auto px-6 py-20 relative z-10">
+      <header class="text-center mb-24">
+        <div
+          class="inline-block px-4 py-1 rounded-full border border-primary-500/30 bg-primary-500/10 text-accent text-[10px] font-black tracking-[0.3em] mb-4 uppercase"
+        >
+          Giải pháp tăng trưởng nội dung bền vững
+        </div>
+        <h1
+          class="text-4xl md:text-6xl font-black text-light-100 mb-6 tracking-tight leading-tight"
+        >
+          ĐỀ XUẤT
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary-500 italic"
+            >CHIẾN LƯỢC NỘI DUNG</span
+          >
+        </h1>
+        <p class="text-light-400 max-w-2xl mx-auto leading-relaxed">
+          Phù hợp với doanh nghiệp B2B/SME cần xây dựng tài sản số thay vì chỉ
+          tăng số lượng bài viết.
+        </p>
+      </header>
+
+      <section class="glass-card">
+        <div class="section-header">
+          <h2
+            class="text-2xl font-black text-light-100 uppercase tracking-widest"
+          >
+            1. Tổng quan đề xuất
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 mb-10">
+          <div>
+            <label
+              class="text-[11px] font-black text-primary-500 uppercase tracking-widest"
+              >Khách hàng</label
+            ><input
+              type="text"
+              class="input-line"
+              placeholder="Nhập tên doanh nghiệp..."
+            />
+          </div>
+          <div>
+            <label
+              class="text-[11px] font-black text-primary-500 uppercase tracking-widest"
+              >Website</label
+            ><input
+              type="text"
+              class="input-line"
+              placeholder="www.yourwebsite.com"
+            />
+          </div>
+          <div>
+            <label
+              class="text-[11px] font-black text-primary-500 uppercase tracking-widest"
+              >Ngành nghề</label
+            ><input
+              type="text"
+              class="input-line"
+              placeholder="Ví dụ: Xây dựng, B2B Services..."
+            />
+          </div>
+          <div>
+            <label
+              class="text-[11px] font-black text-primary-500 uppercase tracking-widest"
+              >Thời gian đề xuất</label
+            ><input
+              type="text"
+              class="input-line"
+              placeholder="Ví dụ: Tháng 03/2026..."
+            />
+          </div>
+        </div>
+        <div
+          class="bg-dark-900/50 p-6 rounded-xl border-l-2 border-accent mt-6"
+        >
+          <p class="text-light-200 leading-relaxed italic">
+            "Yani Content đề xuất triển khai hệ thống nội dung chuẩn SEO theo
+            hành trình khách hàng B2B, tập trung vào đúng nhu cầu tìm kiếm thực
+            tế, từ đó giúp website tăng độ tin cậy và hỗ trợ đội sales tạo thêm
+            khách hàng tiềm năng trong lộ trình 6–12 tháng."
+          </p>
+          <div class="mt-6 space-y-3">
+            <h4 class="text-accent font-bold text-sm flex items-center gap-2">
+              🎯 Mục tiêu dự án:
+            </h4>
+            <ul
+              class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-medium uppercase tracking-wider text-light-400"
+            >
+              <li class="flex items-center gap-2">
+                <i
+                  data-feather="check-circle"
+                  class="w-4 h-4 text-primary-500"
+                ></i>
+                Cấu trúc rõ ràng
+              </li>
+              <li class="flex items-center gap-2">
+                <i
+                  data-feather="check-circle"
+                  class="w-4 h-4 text-primary-500"
+                ></i>
+                Đúng nhóm mục tiêu
+              </li>
+              <li class="flex items-center gap-2">
+                <i
+                  data-feather="check-circle"
+                  class="w-4 h-4 text-primary-500"
+                ></i>
+                Tăng tỷ lệ liên hệ
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass-card">
+        <div class="section-header border-red-500">
+          <h2
+            class="text-2xl font-black text-light-100 uppercase tracking-widest"
+          >
+            2. Hiện trạng & Vấn đề
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 gap-6 mb-10">
+          <div>
+            <label
+              class="text-[11px] font-black text-light-400 uppercase tracking-widest"
+              >Traffic hiện tại (số liệu / chưa có dữ liệu)</label
+            ><input type="text" class="input-line" placeholder="..." />
+          </div>
+          <div>
+            <label
+              class="text-[11px] font-black text-light-400 uppercase tracking-widest"
+              >Số lượng bài viết hiện có</label
+            ><input type="text" class="input-line" placeholder="..." />
+          </div>
+          <div>
+            <label
+              class="text-[11px] font-black text-light-400 uppercase tracking-widest"
+              >Tình trạng nội dung hiện tại</label
+            ><input type="text" class="input-line" placeholder="..." />
+          </div>
+        </div>
+        <div class="p-8 bg-red-500/5 border border-red-500/10 rounded-2xl">
+          <h3
+            class="text-red-400 font-black mb-6 flex items-center gap-3 uppercase text-xs tracking-widest"
+          >
+            <i data-feather="alert-octagon"></i> Rủi ro thường gặp khi làm
+            content
+          </h3>
+          <ul class="space-y-4 text-sm text-light-400 italic">
+            <li class="flex items-start gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5"></span>
+              Nội dung tập trung từ khóa nhưng chưa tạo chuyển đổi
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5"></span>
+              Bài viết thiếu chiều sâu chuyên môn
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5"></span>
+              Chủ đề triển khai rời rạc, khó xây uy tín ngành
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5"></span>
+              Website có nhiều bài nhưng ít phát sinh khách liên hệ
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-20">
+        <div class="section-header">
+          <h2
+            class="text-2xl font-black text-light-100 uppercase tracking-widest"
+          >
+            3. Phương pháp triển khai
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-8 bg-dark-800 rounded-2xl border border-white/5 group">
+            <h3
+              class="font-black text-accent mb-4 uppercase text-[10px] tracking-widest italic"
+            >
+              Trụ cột 1
+            </h3>
+            <h4 class="text-light-100 font-bold mb-3 text-sm">Search Intent</h4>
+            <p class="text-xs text-light-400 leading-relaxed">
+              Mỗi chủ đề được phân tích theo mục đích tìm kiếm (tìm hiểu, so
+              sánh, ra quyết định). Nội dung chuẩn SEO và đúng điều khách hàng
+              quan tâm.
+            </p>
+          </div>
+          <div class="p-8 bg-dark-800 rounded-2xl border border-white/5 group">
+            <h3
+              class="font-black text-primary-500 mb-4 uppercase text-[10px] tracking-widest italic"
+            >
+              Trụ cột 2
+            </h3>
+            <h4 class="text-light-100 font-bold mb-3 text-sm">Topic Cluster</h4>
+            <p class="text-xs text-light-400 leading-relaxed">
+              Tổ chức theo cấu trúc: Bài trụ cột (pillar), cụm bài liên quan,
+              liên kết nội bộ ngữ nghĩa giúp tăng độ phủ và giữ chân người đọc.
+            </p>
+          </div>
+          <div class="p-8 bg-dark-800 rounded-2xl border border-white/5 group">
+            <h3
+              class="font-black text-accent mb-4 uppercase text-[10px] tracking-widest italic"
+            >
+              Trụ cột 3
+            </h3>
+            <h4 class="text-light-100 font-bold mb-3 text-sm">
+              Kiểm duyệt 4 lớp
+            </h4>
+            <p class="text-xs text-light-400 leading-relaxed">
+              Quy trình nghiêm ngặt: Nghiên cứu & chốt dàn ý -> Viết & tối ưu ->
+              Biên tập 2 vòng (SEO & Chuyên ngành) -> Nghiệm thu.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass-card overflow-hidden">
+        <div class="section-header">
+          <h2
+            class="text-2xl font-black text-light-100 uppercase tracking-widest"
+          >
+            4. Phạm vi công việc
+          </h2>
+        </div>
+
+        <p
+          class="text-[11px] text-accent/80 mb-6 font-medium italic leading-relaxed border-l-2 border-accent/30 pl-4"
+        >
+          Phạm vi dịch vụ trên tập trung vào Content chiến lược và tối ưu onpage
+          nội dung, không bao gồm SEO technical tổng thể hoặc hoạt động
+          backlink.
+        </p>
+
+        <div class="mb-8 italic text-sm">
+          Gói đề xuất:
+          <input
+            type="text"
+            class="bg-transparent border-b border-accent outline-none text-accent px-2 w-64"
+            placeholder="..."
+          />
+        </div>
+
+        <div
+          class="overflow-x-auto rounded-xl border border-white/10 bg-dark-900/40"
+        >
+          <table
+            class="w-full text-left text-xs uppercase tracking-wider font-bold"
+          >
+            <thead class="bg-dark-900 text-accent font-black">
+              <tr>
+                <th class="p-5 border-b border-white/5">Hạng mục</th>
+                <th class="p-5 border-b border-white/5">Khối lượng</th>
+                <th class="p-5 border-b border-white/5">Bao gồm</th>
+                <th class="p-5 border-b border-white/5">Không bao gồm</th>
+              </tr>
+            </thead>
+            <tbody class="text-light-400 divide-y divide-white/5">
+              <tr class="hover:bg-white/5 transition-colors">
+                <td class="p-5 text-light-100">Research từ khóa</td>
+                <td class="p-5">
+                  <input
+                    type="text"
+                    class="bg-transparent border-b border-primary-500 w-full outline-none font-bold"
+                    placeholder="..."
+                  />
+                </td>
+                <td class="p-5 italic text-[10px]">Phân nhóm theo intent</td>
+                <td class="p-5 opacity-40 text-[9px]">
+                  SEO technical tổng thể
+                </td>
+              </tr>
+              <tr class="hover:bg-white/5 transition-colors">
+                <td class="p-5 text-light-100">Viết bài SEO</td>
+                <td class="p-5">
+                  <input
+                    type="text"
+                    class="bg-transparent border-b border-primary-500 w-full outline-none font-bold"
+                    placeholder="... bài/tháng"
+                  />
+                </td>
+                <td class="p-5 italic text-[10px]">1.500–3.000+ từ/bài</td>
+                <td class="p-5 opacity-40 text-[9px]">Thiết kế banner</td>
+              </tr>
+              <tr class="hover:bg-white/5 transition-colors">
+                <td class="p-5 text-light-100">Tối ưu onpage</td>
+                <td class="p-5 italic">Bao gồm</td>
+                <td class="p-5 italic text-[10px]">
+                  Title, meta, heading, internal link
+                </td>
+                <td class="p-5 opacity-40 text-[9px]">
+                  Fix lỗi web, Site-wide audit
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p
+          class="mt-6 text-[10px] text-light-400 italic flex items-center gap-2"
+        >
+          <i data-feather="info" class="w-4 h-4 text-accent"></i> Số vòng chỉnh
+          sửa miễn phí:
+          <input
+            type="text"
+            class="bg-transparent border-b border-white/20 w-8 text-center text-accent font-black"
+            value="2"
+          />
+        </p>
+      </section>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-20">
+        <div class="glass-card mb-0">
+          <h3
+            class="text-lg font-black text-accent mb-6 uppercase tracking-widest flex items-center gap-2"
+          >
+            <i data-feather="clock"></i> 5. Quy trình dự kiến
+          </h3>
+          <div class="space-y-6 text-sm">
+            <div class="flex gap-4">
+              <span class="text-primary-500 font-black">Tuần 1:</span>
+              <span class="text-light-300"
+                >Nghiên cứu & đề xuất chủ đề, Gửi dàn ý.</span
+              >
+            </div>
+            <div class="flex gap-4">
+              <span class="text-primary-500 font-black">Tuần 2–4:</span>
+              <span class="text-light-300"
+                >Viết & tối ưu nội dung, Biên tập, Bàn giao theo batch.</span
+              >
+            </div>
+            <div class="pt-2">
+              <label
+                class="text-[10px] text-light-400 uppercase font-black mb-1 block"
+                >Chu kỳ báo cáo</label
+              >
+              <input
+                type="text"
+                class="input-line"
+                placeholder="Hàng tuần/Hàng tháng..."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="glass-card mb-0">
+          <h3
+            class="text-lg font-black text-accent mb-6 uppercase tracking-widest flex items-center gap-2"
+          >
+            <i data-feather="award"></i> 6. Tiêu chuẩn bàn giao
+          </h3>
+          <ul class="grid grid-cols-1 gap-2.5">
+            <li
+              class="flex items-center gap-3 text-[10px] font-black uppercase tracking-tighter text-light-400 p-3 bg-white/5 rounded-lg border border-white/5"
+            >
+              <i data-feather="check" class="text-accent w-4 h-4"></i> Nội dung
+              độc quyền (Unique ≥ 95%)
+            </li>
+            <li
+              class="flex items-center gap-3 text-[10px] font-black uppercase tracking-tighter text-light-400 p-3 bg-white/5 rounded-lg border border-white/5"
+            >
+              <i data-feather="check" class="text-accent w-4 h-4"></i> Bám đúng
+              nhu cầu tìm kiếm
+            </li>
+            <li
+              class="flex items-center gap-3 text-[10px] font-black uppercase tracking-tighter text-light-400 p-3 bg-white/5 rounded-lg border border-white/5"
+            >
+              <i data-feather="check" class="text-accent w-4 h-4"></i> Cấu trúc
+              SEO rõ ràng (H1–H3)
+            </li>
+            <li
+              class="flex items-center gap-3 text-[10px] font-black uppercase tracking-tighter text-light-400 p-3 bg-white/5 rounded-lg border border-white/5"
+            >
+              <i data-feather="check" class="text-accent w-4 h-4"></i> Tối ưu
+              trải nghiệm Desktop & Mobile
+            </li>
+            <li
+              class="flex items-center gap-3 text-[10px] font-black uppercase tracking-tighter text-light-400 p-3 bg-white/5 rounded-lg border border-white/5"
+            >
+              <i data-feather="check" class="text-accent w-4 h-4"></i> Biên tập
+              tối thiểu 2 vòng
+            </li>
+            <li
+              class="flex items-center gap-3 text-[10px] font-black uppercase tracking-tighter text-light-400 p-3 bg-white/5 rounded-lg border border-white/5"
+            >
+              <i data-feather="check" class="text-accent w-4 h-4"></i> Văn phong
+              phù hợp B2B
+            </li>
+            <li
+              class="flex items-center gap-3 text-[10px] font-black uppercase tracking-tighter text-light-400 p-3 bg-white/5 rounded-lg border border-white/5"
+            >
+              <i data-feather="check" class="text-accent w-4 h-4"></i> Hỗ trợ
+              chỉnh sửa trong phạm vi
+            </li>
+            <li
+              class="flex items-center gap-3 text-[10px] font-black uppercase tracking-tighter text-light-400 p-3 bg-white/5 rounded-lg border border-white/5"
+            >
+              <i data-feather="check" class="text-accent w-4 h-4"></i> Kiểm tra
+              theo Checklist nghiệm thu
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="glass-card bg-primary-700/10 border-primary-500/30">
+        <div class="grid md:grid-cols-2 gap-16">
+          <div>
+            <h3
+              class="text-xl font-black text-light-100 mb-8 uppercase tracking-[0.2em] text-xs"
+            >
+              7. Kỳ vọng hiệu quả sau 3–6 tháng
+            </h3>
+            <ul
+              class="space-y-4 text-sm text-light-400 font-medium italic leading-relaxed"
+            >
+              <li class="flex items-center gap-4">
+                <i data-feather="trending-up" class="text-accent w-5 h-5"></i>
+                Tăng độ phủ từ khóa theo cụm chủ đề
+              </li>
+              <li class="flex items-center gap-4">
+                <i data-feather="trending-up" class="text-accent w-5 h-5"></i>
+                Tăng thời gian người dùng ở lại trang
+              </li>
+              <li class="flex items-center gap-4">
+                <i data-feather="trending-up" class="text-accent w-5 h-5"></i>
+                Tăng lượng truy cập organic đúng tệp
+              </li>
+              <li class="flex items-center gap-4">
+                <i data-feather="trending-up" class="text-accent w-5 h-5"></i>
+                Hỗ trợ đội sales trong quá trình tư vấn khách hàng
+              </li>
+            </ul>
+
+            <div class="mt-10 pt-6 border-t border-white/5">
+              <p
+                class="text-[10px] text-light-400 uppercase tracking-widest leading-relaxed opacity-60"
+              >
+                <span class="text-accent font-black">Lưu ý:</span> Hiệu quả SEO
+                phụ thuộc vào mức độ cạnh tranh ngành, nền tảng website hiện tại
+                và ngân sách triển khai tổng thể.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3
+              class="text-xl font-black text-accent mb-8 uppercase tracking-[0.2em] text-xs"
+            >
+              8. Báo giá & Đề xuất triển khai
+            </h3>
+            <div class="space-y-6">
+              <div>
+                <label
+                  class="text-[10px] text-light-400 uppercase font-black mb-1 block tracking-widest"
+                  >Gói phù hợp</label
+                >
+                <input
+                  type="text"
+                  class="input-line font-black text-accent"
+                  placeholder="..."
+                />
+              </div>
+              <div>
+                <label
+                  class="text-[10px] text-light-400 uppercase font-black mb-1 block tracking-widest"
+                  >Ngân sách (VNĐ/tháng)</label
+                >
+                <input
+                  type="text"
+                  class="input-line font-black text-2xl text-accent"
+                  placeholder="0.000.000"
+                />
+              </div>
+              <div>
+                <label
+                  class="text-[10px] text-light-400 uppercase font-black mb-1 block tracking-widest"
+                  >Thời gian tối thiểu khuyến nghị</label
+                >
+                <input type="text" class="input-line" value="3–6 tháng" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass-card">
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3
+              class="text-xl font-black text-light-100 mb-6 uppercase text-xs tracking-widest"
+            >
+              9. Đầu mối phụ trách
+            </h3>
+            <div class="space-y-5">
+              <div>
+                <label
+                  class="text-[10px] uppercase font-black text-primary-500 tracking-widest"
+                  >Project Owner</label
+                ><input type="text" class="input-line" placeholder="..." />
+              </div>
+              <div>
+                <label
+                  class="text-[10px] uppercase font-black text-primary-500 tracking-widest"
+                  >SĐT / Zalo</label
+                ><input type="text" class="input-line" placeholder="..." />
+              </div>
+              <div>
+                <label
+                  class="text-[10px] uppercase font-black text-primary-500 tracking-widest"
+                  >Email</label
+                ><input type="text" class="input-line" placeholder="..." />
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3
+              class="text-xl font-black text-light-100 mb-6 uppercase text-xs tracking-widest"
+            >
+              10. Bước tiếp theo
+            </h3>
+            <div
+              class="p-8 bg-dark-900 rounded-3xl border border-white/5 space-y-6 shadow-2xl"
+            >
+              <div
+                class="text-[10px] text-light-400 font-bold uppercase tracking-tight flex items-center gap-3"
+              >
+                <span
+                  class="w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center"
+                  >!</span
+                >
+                Khởi động trong
+                <input
+                  type="text"
+                  class="bg-transparent border-b border-accent w-8 text-center outline-none text-accent"
+                  value="3"
+                />
+                ngày sau ký kết.
+              </div>
+              <button
+                onclick="window.print()"
+                class="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:scale-[1.02] active:scale-[0.98] text-white font-black py-5 rounded-2xl transition-all flex items-center justify-center gap-4 uppercase text-[10px] tracking-widest"
+              >
+                <i data-feather="file-text"></i> PHÊ DUYỆT ĐỀ XUẤT (IN PDF)
+              </button>
+              <p
+                class="text-[12px] text-light-400 text-center italic opacity-80 leading-relaxed px-4"
+              >
+                Nếu doanh nghiệp cần điều chỉnh phạm vi hoặc nhận bản đề xuất
+                chi tiết hơn theo ngành, Yani Content sẵn sàng trao đổi thêm.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        class="text-center text-[10px] font-black text-light-400 opacity-40 uppercase tracking-[0.4em] py-10"
+      >
+        &copy; 2026 Yani Content Master &bull; Secure Proposal &bull;
+        0902.623.078
+      </footer>
+    </main>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
