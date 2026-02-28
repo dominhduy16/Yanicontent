@@ -29,37 +29,47 @@
       body {
         background-color: #0b1f17;
         position: relative;
-        overflow-x: hidden;
+        overflow-x: hidden; /* Đảm bảo không bao giờ bị tràn ngang khi chụp ảnh */
       }
 
-      /* Lớp nền trang trí sử dụng ảnh Group 446.png */
+      /* Lớp nền trang trí đã được tối ưu để chụp ảnh đẹp */
+      .bg-container {
+        position: fixed; /* Chuyển sang fixed để cố định khung khi chụp screenshot dài */
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1440px; /* Giới hạn độ lan tỏa của background */
+        height: 100vh;
+        z-index: -1;
+        pointer-events: none;
+      }
+
       .bg-decoration {
         position: absolute;
-        z-index: -1;
-        opacity: 0.25;
-        pointer-events: none;
-        width: 800px;
+        opacity: 0.15; /* Giảm nhẹ độ đậm để nội dung nổi bật hơn khi chụp ảnh */
+        width: 650px;
         height: auto;
       }
 
       .bg-pos-1 {
-        top: 0;
-        right: -200px;
+        top: -10%;
+        right: -150px;
         transform: rotate(15deg);
       }
       .bg-pos-2 {
         top: 20%;
-        left: -300px;
+        left: -250px;
         transform: rotate(180deg);
       }
       .bg-pos-3 {
         top: 50%;
-        right: -250px;
+        right: -200px;
         transform: rotate(90deg);
       }
       .bg-pos-4 {
-        bottom: 0;
-        left: -100px;
+        bottom: -10%;
+        left: -150px;
         transform: rotate(-45deg);
       }
 
@@ -101,7 +111,7 @@
       }
 
       @media print {
-        .bg-decoration {
+        .bg-container {
           display: none;
         }
         .glass-card {
@@ -118,10 +128,12 @@
     </style>
   </head>
   <body class="text-light-300 font-sans antialiased">
-    <img src="Group 446.png" class="bg-decoration bg-pos-1" alt="bg" />
-    <img src="Group 446.png" class="bg-decoration bg-pos-2" alt="bg" />
-    <img src="Group 446.png" class="bg-decoration bg-pos-3" alt="bg" />
-    <img src="Group 446.png" class="bg-decoration bg-pos-4" alt="bg" />
+    <div class="bg-container">
+      <img src="Group 446.png" class="bg-decoration bg-pos-1" alt="bg" />
+      <img src="Group 446.png" class="bg-decoration bg-pos-2" alt="bg" />
+      <img src="Group 446.png" class="bg-decoration bg-pos-3" alt="bg" />
+      <img src="Group 446.png" class="bg-decoration bg-pos-4" alt="bg" />
+    </div>
 
     <main class="max-w-4xl mx-auto px-6 py-20 relative z-10">
       <header class="text-center mb-24">
@@ -352,7 +364,6 @@
             4. Phạm vi công việc
           </h2>
         </div>
-
         <p
           class="text-[11px] text-accent/80 mb-6 font-medium italic leading-relaxed border-l-2 border-accent/30 pl-4"
         >
@@ -360,7 +371,6 @@
           nội dung, không bao gồm SEO technical tổng thể hoặc hoạt động
           backlink.
         </p>
-
         <div class="mb-8 italic text-sm">
           Gói đề xuất:
           <input
@@ -369,7 +379,6 @@
             placeholder="..."
           />
         </div>
-
         <div
           class="overflow-x-auto rounded-xl border border-white/10 bg-dark-900/40"
         >
@@ -446,14 +455,14 @@
           </h3>
           <div class="space-y-6 text-sm">
             <div class="flex gap-4">
-              <span class="text-primary-500 font-black">Tuần 1:</span>
-              <span class="text-light-300"
+              <span class="text-primary-500 font-black">Tuần 1:</span
+              ><span class="text-light-300"
                 >Nghiên cứu & đề xuất chủ đề, Gửi dàn ý.</span
               >
             </div>
             <div class="flex gap-4">
-              <span class="text-primary-500 font-black">Tuần 2–4:</span>
-              <span class="text-light-300"
+              <span class="text-primary-500 font-black">Tuần 2–4:</span
+              ><span class="text-light-300"
                 >Viết & tối ưu nội dung, Biên tập, Bàn giao theo batch.</span
               >
             </div>
@@ -461,8 +470,7 @@
               <label
                 class="text-[10px] text-light-400 uppercase font-black mb-1 block"
                 >Chu kỳ báo cáo</label
-              >
-              <input
+              ><input
                 type="text"
                 class="input-line"
                 placeholder="Hàng tuần/Hàng tháng..."
@@ -557,7 +565,6 @@
                 Hỗ trợ đội sales trong quá trình tư vấn khách hàng
               </li>
             </ul>
-
             <div class="mt-10 pt-6 border-t border-white/5">
               <p
                 class="text-[10px] text-light-400 uppercase tracking-widest leading-relaxed opacity-60"
@@ -568,7 +575,6 @@
               </p>
             </div>
           </div>
-
           <div>
             <h3
               class="text-xl font-black text-accent mb-8 uppercase tracking-[0.2em] text-xs"
@@ -580,8 +586,7 @@
                 <label
                   class="text-[10px] text-light-400 uppercase font-black mb-1 block tracking-widest"
                   >Gói phù hợp</label
-                >
-                <input
+                ><input
                   type="text"
                   class="input-line font-black text-accent"
                   placeholder="..."
@@ -591,8 +596,7 @@
                 <label
                   class="text-[10px] text-light-400 uppercase font-black mb-1 block tracking-widest"
                   >Ngân sách (VNĐ/tháng)</label
-                >
-                <input
+                ><input
                   type="text"
                   class="input-line font-black text-2xl text-accent"
                   placeholder="0.000.000"
@@ -602,8 +606,7 @@
                 <label
                   class="text-[10px] text-light-400 uppercase font-black mb-1 block tracking-widest"
                   >Thời gian tối thiểu khuyến nghị</label
-                >
-                <input type="text" class="input-line" value="3–6 tháng" />
+                ><input type="text" class="input-line" value="3–6 tháng" />
               </div>
             </div>
           </div>
@@ -654,8 +657,7 @@
                 <span
                   class="w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center"
                   >!</span
-                >
-                Khởi động trong
+                >Khởi động trong
                 <input
                   type="text"
                   class="bg-transparent border-b border-accent w-8 text-center outline-none text-accent"
