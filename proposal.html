@@ -29,47 +29,47 @@
       body {
         background-color: #0b1f17;
         position: relative;
-        overflow-x: hidden; /* Đảm bảo không bao giờ bị tràn ngang khi chụp ảnh */
+        overflow-x: hidden; /* Quan trọng: Ngăn thanh cuộn ngang */
       }
 
-      /* Lớp nền trang trí đã được tối ưu để chụp ảnh đẹp */
-      .bg-container {
-        position: fixed; /* Chuyển sang fixed để cố định khung khi chụp screenshot dài */
+      /* FIX: Khung cố định để chứa ảnh nền mà không làm tràn chiều rộng trang */
+      .bg-fixed-wrapper {
+        position: fixed;
         top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
         width: 100%;
-        max-width: 1440px; /* Giới hạn độ lan tỏa của background */
-        height: 100vh;
+        height: 100%;
         z-index: -1;
+        overflow: hidden; /* Cắt bỏ phần ảnh thò ra ngoài để chụp F12 không bị lỗi */
         pointer-events: none;
       }
 
       .bg-decoration {
         position: absolute;
-        opacity: 0.15; /* Giảm nhẹ độ đậm để nội dung nổi bật hơn khi chụp ảnh */
-        width: 650px;
+        opacity: 0.25;
+        width: 800px;
         height: auto;
       }
 
+      /* Giữ nguyên tọa độ của bạn nhưng nằm trong khung đã overflow:hidden */
       .bg-pos-1 {
-        top: -10%;
-        right: -150px;
+        top: 0;
+        right: -200px;
         transform: rotate(15deg);
       }
       .bg-pos-2 {
         top: 20%;
-        left: -250px;
+        left: -300px;
         transform: rotate(180deg);
       }
       .bg-pos-3 {
         top: 50%;
-        right: -200px;
+        right: -250px;
         transform: rotate(90deg);
       }
       .bg-pos-4 {
-        bottom: -10%;
-        left: -150px;
+        bottom: 0;
+        left: -100px;
         transform: rotate(-45deg);
       }
 
@@ -111,7 +111,7 @@
       }
 
       @media print {
-        .bg-container {
+        .bg-fixed-wrapper {
           display: none;
         }
         .glass-card {
@@ -128,7 +128,7 @@
     </style>
   </head>
   <body class="text-light-300 font-sans antialiased">
-    <div class="bg-container">
+    <div class="bg-fixed-wrapper">
       <img src="Group 446.png" class="bg-decoration bg-pos-1" alt="bg" />
       <img src="Group 446.png" class="bg-decoration bg-pos-2" alt="bg" />
       <img src="Group 446.png" class="bg-decoration bg-pos-3" alt="bg" />
@@ -162,7 +162,7 @@
           <h2
             class="text-2xl font-black text-light-100 uppercase tracking-widest"
           >
-            1. Tổng quan đề xuất - New 
+            1. Tổng quan đề xuất
           </h2>
         </div>
         <div class="grid md:grid-cols-2 gap-8 mb-10">
@@ -323,8 +323,7 @@
             <h4 class="text-light-100 font-bold mb-3 text-sm">Search Intent</h4>
             <p class="text-xs text-light-400 leading-relaxed">
               Mỗi chủ đề được phân tích theo mục đích tìm kiếm (tìm hiểu, so
-              sánh, ra quyết định). Nội dung chuẩn SEO và đúng điều khách hàng
-              quan tâm.
+              sánh, ra quyết định).
             </p>
           </div>
           <div class="p-8 bg-dark-800 rounded-2xl border border-white/5 group">
@@ -335,8 +334,8 @@
             </h3>
             <h4 class="text-light-100 font-bold mb-3 text-sm">Topic Cluster</h4>
             <p class="text-xs text-light-400 leading-relaxed">
-              Tổ chức theo cấu trúc: Bài trụ cột (pillar), cụm bài liên quan,
-              liên kết nội bộ ngữ nghĩa giúp tăng độ phủ và giữ chân người đọc.
+              Tổ chức theo cấu trúc: Pillar, cụm bài liên quan, liên kết nội bộ
+              ngữ nghĩa.
             </p>
           </div>
           <div class="p-8 bg-dark-800 rounded-2xl border border-white/5 group">
@@ -349,8 +348,8 @@
               Kiểm duyệt 4 lớp
             </h4>
             <p class="text-xs text-light-400 leading-relaxed">
-              Quy trình nghiêm ngặt: Nghiên cứu & chốt dàn ý -> Viết & tối ưu ->
-              Biên tập 2 vòng (SEO & Chuyên ngành) -> Nghiệm thu.
+              Quy trình nghiêm ngặt: Nghiên cứu -> Viết & tối ưu -> Biên tập 2
+              vòng -> Nghiệm thu.
             </p>
           </div>
         </div>
@@ -394,7 +393,7 @@
               </tr>
             </thead>
             <tbody class="text-light-400 divide-y divide-white/5">
-              <tr class="hover:bg-white/5 transition-colors">
+              <tr>
                 <td class="p-5 text-light-100">Research từ khóa</td>
                 <td class="p-5">
                   <input
@@ -408,7 +407,7 @@
                   SEO technical tổng thể
                 </td>
               </tr>
-              <tr class="hover:bg-white/5 transition-colors">
+              <tr>
                 <td class="p-5 text-light-100">Viết bài SEO</td>
                 <td class="p-5">
                   <input
@@ -420,7 +419,7 @@
                 <td class="p-5 italic text-[10px]">1.500–3.000+ từ/bài</td>
                 <td class="p-5 opacity-40 text-[9px]">Thiết kế banner</td>
               </tr>
-              <tr class="hover:bg-white/5 transition-colors">
+              <tr>
                 <td class="p-5 text-light-100">Tối ưu onpage</td>
                 <td class="p-5 italic">Bao gồm</td>
                 <td class="p-5 italic text-[10px]">
@@ -695,4 +694,3 @@
     </script>
   </body>
 </html>
-
